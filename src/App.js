@@ -28,6 +28,7 @@ function App() {
                   </span>
                 </div>
                 <h1 className="movie-info-title">Fight Club</h1>
+                <p className="movie-info-tagline">Mischief. Mayhem. Soap.</p>
                 <p className="movie-info-description">
                   A ticking-time-bomb insomniac and a slippery soap salesman
                   channel primal male aggression into a shocking new form of
@@ -53,6 +54,7 @@ function App() {
                   </span>
                 </div>
                 <h1 className="movie-info-title">Fight Club</h1>
+                <p className="movie-info-tagline">Mischief. Mayhem. Soap.</p>
                 <p className="movie-info-description">
                   A ticking-time-bomb insomniac and a slippery soap salesman
                   channel primal male aggression into a shocking new form of
@@ -76,6 +78,7 @@ function App() {
                   </span>
                 </div>
                 <h1 className="movie-info-title">Fight Club</h1>
+                <p className="movie-info-tagline">Mischief. Mayhem. Soap.</p>
                 <p className="movie-info-description">
                   A ticking-time-bomb insomniac and a slippery soap salesman
                   channel primal male aggression into a shocking new form of
@@ -99,6 +102,7 @@ function App() {
                   </span>
                 </div>
                 <h1 className="movie-info-title">Fight Club</h1>
+                <p className="movie-info-tagline">Mischief. Mayhem. Soap.</p>
                 <p className="movie-info-description">
                   A ticking-time-bomb insomniac and a slippery soap salesman
                   channel primal male aggression into a shocking new form of
@@ -122,6 +126,7 @@ function App() {
                   </span>
                 </div>
                 <h1 className="movie-info-title">Fight Club</h1>
+                <p className="movie-info-tagline">Mischief. Mayhem. Soap.</p>
                 <p className="movie-info-description">
                   A ticking-time-bomb insomniac and a slippery soap salesman
                   channel primal male aggression into a shocking new form of

@@ -63,18 +63,6 @@ main {
       bottom: 0;
       z-index: 1;
     }
-
-
-    // img {
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    //   z-index: 0;
-
-    //   height: 100%;
-    //   width: auto;
-    // }
-
   }
 
   .movie-info-container {
@@ -104,9 +92,16 @@ main {
     font-size: 18*$px;
   }
 
+  .movie-info-tagline {
+    color: inherit;
+    font-size: 16*$px;
+    font-weight: $light;
+  }
+
   .movie-info-description {
     color: inherit;
     font-size: 14*$px;
+    font-weight: $regular;
     display: none;
   }
 
@@ -190,13 +185,25 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768*$px) {
   main {
     .movie-primary-container {
       padding: $margin-default*5 $margin-default;
 
       .movie-info-container {
         max-width: 67%;
+      }
+
+      .movie-info-title {
+        font-size: 32*$px;
+      }
+
+      .movie-info-tagline {
+        font-size: 24*$px;
+      }
+
+      .movie-info-description {
+        font-size: 16*$px;
       }
     }
 
@@ -205,8 +212,6 @@ footer {
     }
 
     .movie-secondary-wrapper {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
 
       .movie-info-description {
         display: none;
@@ -215,7 +220,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024*$px) {
   main {
     .movie-primary-container {
       margin: 0 auto;
@@ -229,28 +234,37 @@ footer {
         background: linear-gradient(-270deg, rgba(112, 112, 112, 1) 33%, rgba(112, 112, 112, 0) 60%, rgba(112, 112, 112, 0) 80%, rgba(112, 112, 112, 1) 100%);
       }
 
-      // img {
-      //   width: 100%;
-      //   max-width: 50%;
-      //   height: auto;
-      //   right: -$margin-default;
-      //   top: -25%;
-      //   -webkit-mask-image: radial-gradient(ellipse, black 0%, transparent 67%);
-      //   mask-image: radial-gradient(ellipse, black 0%, transparent 67%);
-      // }
-
       .movie-info-container {
         max-width: 50%;
 
       }
     }
+
+    .movie-secondary-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1366*$px) {
   main {
     .movie-info-wrapper {
       max-width: 33%;
+    }
+
+    .movie-secondary-wrapper {
+      margin: 0 auto;
+      min-width: 1366px;
+      max-width: 67%;
+
+      .movie-secondary-container {
+        padding: $margin-default/3;
+
+        .movie-info-description {
+          display: block;
+        }
+      }
+
     }
   }
 }
