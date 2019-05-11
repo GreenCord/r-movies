@@ -1,0 +1,229 @@
+@import './scss/variables';
+@import './scss/typography';
+
+body,
+html,
+#root,
+.App {
+  font: 100%/1.5 $font-stack-body;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+
+  .flex-wrapper {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+}
+
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  background: $color-dark;
+  line-height: 1;
+  padding: $margin-default/3;
+
+}
+
+main {
+  background: $color-medium-light;
+  color: $color-dark;
+  width: 100%;
+
+  .movie-primary-wrapper {
+    background: $color-medium;
+    color: $color-light;
+  }
+
+  .movie-primary-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    padding: $margin-default*5 $margin-default/2;
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 0;
+
+      height: 100%;
+      width: auto;
+
+      -webkit-mask-image: -webkit-gradient(linear, top, bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+      mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+  }
+
+  .movie-info-intro {
+    color: inherit;
+    font-size: 10*$px;
+    font-weight: $semibold;
+    margin-bottom: $margin-default/6;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    span:last-child:before {
+      content: ' – ';
+    }
+  }
+
+
+  .movie-info-title {
+    color: inherit;
+    font-weight: $black;
+    font-size: 18*$px;
+  }
+
+  .movie-info-description {
+    color: inherit;
+    font-size: 14*$px;
+    display: none;
+  }
+
+  .movie-secondary-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: $margin-default/2;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: $margin-default/2;
+    transform: translateY(-$margin-default*2);
+    z-index: 9;
+
+    .movie-secondary-container {
+      background: #fff;
+      border-radius: 4px;
+      box-shadow:
+        0 1px 2px $color-dark-19,
+        0 2px 4px $color-dark-19,
+        0 4px 6px $color-dark-19;
+      padding: $margin-default/6;
+      transform: translateY(0);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        box-shadow:
+          0 0 1px $color-dark-19,
+          0 1px 2px $color-dark-19,
+          0 2px 4px $color-dark-19;
+        transform: translateY(2*$px);
+      }
+
+      .movie-info-releaseDate {
+        display: none;
+      }
+
+      img {
+        border-radius: 4px 4px 0 0;
+        width: 100%;
+        height: auto;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  background: $color-medium-light;
+  color: $color-dark;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: $bold;
+  outline: 0;
+  padding: $margin-default/3 $margin-default/2;
+  text-transform: uppercase;
+}
+
+footer {
+  background: $color-medium-dark;
+  color: $color-medium-light;
+  font-size: 11*$px;
+  line-height: 1.25;
+  text-align: center;
+  padding: $margin-default/2;
+
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: $color-light;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    .movie-primary-container {
+      padding: $margin-default*5 $margin-default;
+
+      .movie-info-container {
+        max-width: 67%;
+      }
+    }
+
+    .movie-info-description {
+      display: block;
+    }
+
+    .movie-secondary-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      .movie-info-description {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    .movie-primary-container {
+      margin: 0 auto;
+      max-width: 960*$px;
+
+      img {
+        width: 100%;
+        max-width: 50%;
+        height: auto;
+        right: -$margin-default;
+        top: -25%;
+        -webkit-mask-image: radial-gradient(ellipse, black 0%, transparent 67%);
+        mask-image: radial-gradient(ellipse, black 0%, transparent 67%);
+      }
+
+      .movie-info-container {
+        max-width: 50%;
+
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  main {
+    .movie-info-wrapper {
+      max-width: 33%;
+    }
+  }
+}

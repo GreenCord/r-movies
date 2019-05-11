@@ -1,24 +1,149 @@
 import React from "react";
+
+import "./App.scss";
 import logo from "./logo.svg";
-import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div class="flex-wrapper">
+        <header>
+          <img src={logo} alt="nevizen" />
+        </header>
+        <main>
+          <section className="movie-primary-wrapper">
+            <div className="movie-primary-container">
+              <img
+                src="http://image.tmdb.org/t/p/original/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
+                alt="temp"
+              />
+              <div className="movie-info-container">
+                <div className="movie-info-intro">
+                  <span className="movie-info-genre">Drama</span>
+                  <span className="movie-info-releaseDate">
+                    October 15, 1999
+                  </span>
+                </div>
+                <h1 className="movie-info-title">Fight Club</h1>
+                <p className="movie-info-description">
+                  A ticking-time-bomb insomniac and a slippery soap salesman
+                  channel primal male aggression into a shocking new form of
+                  therapy. Their concept catches on, with underground "fight
+                  clubs" forming in every town, until an eccentric gets in the
+                  way and ignites an out-of-control spiral toward oblivion.
+                </p>
+                <button className="btn btn-solid">Details</button>
+              </div>
+            </div>
+          </section>
+          <section className="movie-secondary-wrapper">
+            <div className="movie-secondary-container">
+              <img
+                src="http://image.tmdb.org/t/p/w500/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
+                alt="temp"
+              />
+              <div className="movie-info-container">
+                <div className="movie-info-intro">
+                  <span className="movie-info-genre">Drama</span>
+                  <span className="movie-info-releaseDate">
+                    October 15, 1999
+                  </span>
+                </div>
+                <h1 className="movie-info-title">Fight Club</h1>
+                <p className="movie-info-description">
+                  A ticking-time-bomb insomniac and a slippery soap salesman
+                  channel primal male aggression into a shocking new form of
+                  therapy. Their concept catches on, with underground "fight
+                  clubs" forming in every town, until an eccentric gets in the
+                  way and ignites an out-of-control spiral toward oblivion.
+                </p>
+                <button className="btn btn-solid">Details</button>
+              </div>
+            </div>
+            <div className="movie-secondary-container">
+              <img
+                src="http://image.tmdb.org/t/p/w500/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
+                alt="temp"
+              />
+              <div className="movie-info-container">
+                <div className="movie-info-intro">
+                  <span className="movie-info-genre">Drama</span>
+                  <span className="movie-info-releaseDate">
+                    October 15, 1999
+                  </span>
+                </div>
+                <h1 className="movie-info-title">Fight Club</h1>
+                <p className="movie-info-description">
+                  A ticking-time-bomb insomniac and a slippery soap salesman
+                  channel primal male aggression into a shocking new form of
+                  therapy. Their concept catches on, with underground "fight
+                  clubs" forming in every town, until an eccentric gets in the
+                  way and ignites an out-of-control spiral toward oblivion.
+                </p>
+                <button className="btn btn-solid">Details</button>
+              </div>
+            </div>
+            <div className="movie-secondary-container">
+              <img
+                src="http://image.tmdb.org/t/p/w500/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
+                alt="temp"
+              />
+              <div className="movie-info-container">
+                <div className="movie-info-intro">
+                  <span className="movie-info-genre">Drama</span>
+                  <span className="movie-info-releaseDate">
+                    October 15, 1999
+                  </span>
+                </div>
+                <h1 className="movie-info-title">Fight Club</h1>
+                <p className="movie-info-description">
+                  A ticking-time-bomb insomniac and a slippery soap salesman
+                  channel primal male aggression into a shocking new form of
+                  therapy. Their concept catches on, with underground "fight
+                  clubs" forming in every town, until an eccentric gets in the
+                  way and ignites an out-of-control spiral toward oblivion.
+                </p>
+                <button className="btn btn-solid">Details</button>
+              </div>
+            </div>
+            <div className="movie-secondary-container">
+              <img
+                src="http://image.tmdb.org/t/p/w500/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
+                alt="temp"
+              />
+              <div className="movie-info-container">
+                <div className="movie-info-intro">
+                  <span className="movie-info-genre">Drama</span>
+                  <span className="movie-info-releaseDate">
+                    October 15, 1999
+                  </span>
+                </div>
+                <h1 className="movie-info-title">Fight Club</h1>
+                <p className="movie-info-description">
+                  A ticking-time-bomb insomniac and a slippery soap salesman
+                  channel primal male aggression into a shocking new form of
+                  therapy. Their concept catches on, with underground "fight
+                  clubs" forming in every town, until an eccentric gets in the
+                  way and ignites an out-of-control spiral toward oblivion.
+                </p>
+                <button className="btn btn-solid">Details</button>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer>
+        &copy; 2019 &ndash; Steven Martinez
+        <br />
+        Movie data from{" "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://www.themoviedb.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          https://www.themoviedb.org
         </a>
-      </header>
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,40 @@
+// 1px = 0.0625rem;
+$px: 0.0625rem;
+
+// Margin/Padding/Gutter Default
+$margin-default: 30 * $px;
+
+// Font Stack
+$font-stack-body: Muli,
+'Helvetica Neue',
+Helvetica,
+Arial,
+sans-serif;
+$font-stack-display: Muli,
+'Helvetica Neue',
+Helvetica,
+Arial,
+sans-serif;
+$font-stack-mono: 'Lucida Sans Typewriter',
+'Lucida Console',
+Monaco,
+monospace,
+monospace;
+
+// Weights
+$light: 300;
+$regular: 400;
+$medium: 400;
+$semibold: 600;
+$bold: 700;
+$black: 900;
+
+// Color Theme
+$color-light: #efefef;
+$color-medium-light: #c4c4c4;
+$color-medium: #707070;
+$color-medium-dark: #333333;
+$color-dark: #0e0e0e;
+$color-dark-19: rgba(14, 14, 14, 0.19);
+$color-dark-33: rgba(14, 14, 14, 0.33);
+$color-dark-67: rgba(14, 14, 14, 0.67);
