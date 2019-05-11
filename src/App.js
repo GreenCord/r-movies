@@ -4,6 +4,8 @@ import "./App.scss";
 import logo from "./logo.svg";
 
 function App() {
+  const background =
+    "http://image.tmdb.org/t/p/original/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg";
   return (
     <div className="App">
       <div class="flex-wrapper">
@@ -12,11 +14,12 @@ function App() {
         </header>
         <main>
           <section className="movie-primary-wrapper">
-            <div className="movie-primary-container">
-              <img
-                src="http://image.tmdb.org/t/p/original/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
-                alt="temp"
-              />
+            <div
+              className="movie-primary-container"
+              style={{
+                backgroundImage: `url(${background})`
+              }}
+            >
               <div className="movie-info-container">
                 <div className="movie-info-intro">
                   <span className="movie-info-genre">Drama</span>

@@ -49,20 +49,39 @@ main {
     left: 0;
     z-index: 1;
 
+    background: 50% 50% no-repeat;
+    background-size: cover;
     padding: $margin-default*5 $margin-default/2;
 
-    img {
+    &:after {
+      background: linear-gradient(-270deg, rgba(112, 112, 112, 1) 33%, rgba(112, 112, 112, 0) 100%);
+      content: '';
       position: absolute;
       top: 0;
+      left: 0;
       right: 0;
-      z-index: 0;
-
-      height: 100%;
-      width: auto;
-
-      -webkit-mask-image: -webkit-gradient(linear, top, bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
-      mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      bottom: 0;
+      z-index: 1;
     }
+
+
+    // img {
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   z-index: 0;
+
+    //   height: 100%;
+    //   width: auto;
+    // }
+
+  }
+
+  .movie-info-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
   }
 
   .movie-info-intro {
@@ -200,17 +219,25 @@ footer {
   main {
     .movie-primary-container {
       margin: 0 auto;
-      max-width: 960*$px;
+      max-width: 1024*$px;
 
-      img {
-        width: 100%;
-        max-width: 50%;
-        height: auto;
-        right: -$margin-default;
-        top: -25%;
-        -webkit-mask-image: radial-gradient(ellipse, black 0%, transparent 67%);
-        mask-image: radial-gradient(ellipse, black 0%, transparent 67%);
+      background: top right no-repeat;
+      background-size: 75%;
+      background-position-y: 50%;
+
+      &:after {
+        background: linear-gradient(-270deg, rgba(112, 112, 112, 1) 33%, rgba(112, 112, 112, 0) 60%, rgba(112, 112, 112, 0) 80%, rgba(112, 112, 112, 1) 100%);
       }
+
+      // img {
+      //   width: 100%;
+      //   max-width: 50%;
+      //   height: auto;
+      //   right: -$margin-default;
+      //   top: -25%;
+      //   -webkit-mask-image: radial-gradient(ellipse, black 0%, transparent 67%);
+      //   mask-image: radial-gradient(ellipse, black 0%, transparent 67%);
+      // }
 
       .movie-info-container {
         max-width: 50%;
