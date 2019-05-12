@@ -5,12 +5,17 @@ import MovieContainer from "./MovieContainer";
 import "./MoviePrimaryContainer.scss";
 
 const MoviePrimaryContainer = props => {
-  const thisImgUrl = props.imgUrl + props.movies[0].backdrop_path;
+  console.log("MoviePrimaryContainer - props", props);
+  const backdrop_path =
+    props.movies.length === 0
+      ? "https://placehold.it/1920x1280"
+      : props.imgUrl + props.movies[0].backdrop_path;
+
   return (
     <section
       className="movie-primary-wrapper"
       style={{
-        backgroundImage: `url(${thisImgUrl})`
+        backgroundImage: `url(${backdrop_path})`
       }}
     >
       <div className="movie-primary-container">

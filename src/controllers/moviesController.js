@@ -24,58 +24,40 @@ exports.movies_find = (req, res) => {
   return res.send(temp);
 };
 
-// movies_top5: Returns top 5 movies for month.
-//////originalfunction
-// async function getPopular(pageNum) {
-//   // Build request URL
-//   const reqUrl = `${url}/popular?api_key=${apiKey}&language=${language}&page=${pageNum}`;
-//   // Axios request
-//   return axios.get(reqUrl);
-// }
-///////////////////////
+// movies_top5: Returns datils for the top 5 movies.
+
+// getPopular retrieves the first page of the most popular movies from TMDB.
 async function getPopular(pageNum) {
-  // Build request URL
+  // Build request URL for (pageNum)th page of most popular movies.
   const reqUrl = `${url}/popular?api_key=${apiKey}&language=${language}&page=${pageNum}`;
+
+  // Request response from axios to get the page of popular movies.
   const response = await axios.get(reqUrl);
+
+  // Slice the top 5 movies and map the id to the getDetail request.
+  // Map responses into movies array.
   let movies = response.data.results.slice(0, 5).map(movie => {
     return getDetail(movie.id);
   });
+  // Returns the movies array with details after all items mapped.
   return Promise.all(movies).then(completed => {
-    console.log("getPopular: Promise completed", completed);
     return completed;
   });
 }
+// getDetail retrieves the details for the specific movie ID
 async function getDetail(id) {
   const reqUrl = `${url}/${id}?api_key=${apiKey}&language=${language}`;
   // Axios request
   let data = await axios.get(reqUrl);
   return data.data;
 }
-async function getDetails(arrIds) {
-  console.log("getDetails: arrIds", arrIds);
-  let movies = arrIds.map(async movie => {
-    console.log("getDetails arrIds.map movie", movie);
-    return getDetail(movie);
-  });
-  Promise.all(movies).then(completed => {
-    console.log("getDetails: Promise.all completed", completed);
-    return completed;
-  });
-}
+
 exports.movies_top5 = async (req, res) => {
   try {
     const responseData = await getPopular(1);
-    // const movieData = await getDetails(
-    //   responseData.data.results.slice(0, 5).map(x => x.id)
-    // );
-    // Promise.all(movieData).then(completed => {
-    //   console.log("Raw response (movieData)", completed);
-    //   res.status(200).send(completed);
-    // });
-    console.log("movies_top5: responseData", responseData);
     res.status(200).send(responseData);
   } catch (event) {
-    console.log("Axios/Error: ", event.stack);
+    console.error("Axios/Error: ", event.stack);
     res.status(500).send({ error: event.message });
   }
 };
