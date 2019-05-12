@@ -1,0 +1,49 @@
+@import '../../scss/variables';
+
+.movie-info-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.movie-info-intro {
+  color: inherit;
+  font-size: 10*$px;
+  font-weight: $semibold;
+  margin-bottom: $margin-default/6;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  .movie-info-position {
+    &:after {
+      content: ' – ';
+    }
+  }
+
+  .movie-info-releaseDate {
+    &:before {
+      content: ' – ';
+    }
+  }
+}
+
+
+.movie-info-title {
+  color: inherit;
+  font-weight: $black;
+  font-size: 18*$px;
+}
+
+.movie-info-tagline {
+  color: inherit;
+  font-size: 16*$px;
+  font-weight: $light;
+}
+
+.movie-info-description {
+  color: inherit;
+  font-size: 14*$px;
+  font-weight: $regular;
+  display: none;
+}

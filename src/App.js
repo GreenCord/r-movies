@@ -5,7 +5,7 @@ import "./App.scss";
 import logo from "./logo.svg";
 // Components
 import MoviePrimaryContainer from "./components/MovieContainer/MoviePrimaryContainer";
-
+import MovieContainer from "./components/MovieContainer/MovieContainer";
 const useAppState = () => {
   const [top5, setTop5] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -47,6 +47,7 @@ const App = props => {
       <div className="flex-wrapper">
         <header>
           <img src={logo} alt="nevizen" />
+          <div>Top 5 Most Popular Movies</div>
         </header>
         {isLoading ? (
           <div>Loading...</div>
@@ -57,102 +58,15 @@ const App = props => {
               imgUrl={imgUrl + size.original}
             />
             <section className="movie-secondary-wrapper">
-              <div className="movie-secondary-container">
-                <img
-                  src="http://image.tmdb.org/t/p/w500/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
-                  alt="temp"
-                />
-                <div className="movie-info-container">
-                  <div className="movie-info-intro">
-                    <span className="movie-info-genre">Drama</span>
-                    <span className="movie-info-releaseDate">
-                      October 15, 1999
-                    </span>
-                  </div>
-                  <h1 className="movie-info-title">Fight Club</h1>
-                  <p className="movie-info-tagline">Mischief. Mayhem. Soap.</p>
-                  <p className="movie-info-description">
-                    A ticking-time-bomb insomniac and a slippery soap salesman
-                    channel primal male aggression into a shocking new form of
-                    therapy. Their concept catches on, with underground "fight
-                    clubs" forming in every town, until an eccentric gets in the
-                    way and ignites an out-of-control spiral toward oblivion.
-                  </p>
-                  <button className="btn btn-solid">Details</button>
+              {top5.slice(1, 5).map((movie, i) => (
+                <div key={movie.id} className="movie-secondary-container">
+                  <img
+                    src={`${imgUrl}${size.w500}` + movie.poster_path}
+                    alt={movie.title + ` movie poster`}
+                  />
+                  <MovieContainer position={i + 2} movie={movie} />
                 </div>
-              </div>
-              <div className="movie-secondary-container">
-                <img
-                  src="http://image.tmdb.org/t/p/w500/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
-                  alt="temp"
-                />
-                <div className="movie-info-container">
-                  <div className="movie-info-intro">
-                    <span className="movie-info-genre">Drama</span>
-                    <span className="movie-info-releaseDate">
-                      October 15, 1999
-                    </span>
-                  </div>
-                  <h1 className="movie-info-title">Fight Club</h1>
-                  <p className="movie-info-tagline">Mischief. Mayhem. Soap.</p>
-                  <p className="movie-info-description">
-                    A ticking-time-bomb insomniac and a slippery soap salesman
-                    channel primal male aggression into a shocking new form of
-                    therapy. Their concept catches on, with underground "fight
-                    clubs" forming in every town, until an eccentric gets in the
-                    way and ignites an out-of-control spiral toward oblivion.
-                  </p>
-                  <button className="btn btn-solid">Details</button>
-                </div>
-              </div>
-              <div className="movie-secondary-container">
-                <img
-                  src="http://image.tmdb.org/t/p/w500/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
-                  alt="temp"
-                />
-                <div className="movie-info-container">
-                  <div className="movie-info-intro">
-                    <span className="movie-info-genre">Drama</span>
-                    <span className="movie-info-releaseDate">
-                      October 15, 1999
-                    </span>
-                  </div>
-                  <h1 className="movie-info-title">Fight Club</h1>
-                  <p className="movie-info-tagline">Mischief. Mayhem. Soap.</p>
-                  <p className="movie-info-description">
-                    A ticking-time-bomb insomniac and a slippery soap salesman
-                    channel primal male aggression into a shocking new form of
-                    therapy. Their concept catches on, with underground "fight
-                    clubs" forming in every town, until an eccentric gets in the
-                    way and ignites an out-of-control spiral toward oblivion.
-                  </p>
-                  <button className="btn btn-solid">Details</button>
-                </div>
-              </div>
-              <div className="movie-secondary-container">
-                <img
-                  src="http://image.tmdb.org/t/p/w500/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
-                  alt="temp"
-                />
-                <div className="movie-info-container">
-                  <div className="movie-info-intro">
-                    <span className="movie-info-genre">Drama</span>
-                    <span className="movie-info-releaseDate">
-                      October 15, 1999
-                    </span>
-                  </div>
-                  <h1 className="movie-info-title">Fight Club</h1>
-                  <p className="movie-info-tagline">Mischief. Mayhem. Soap.</p>
-                  <p className="movie-info-description">
-                    A ticking-time-bomb insomniac and a slippery soap salesman
-                    channel primal male aggression into a shocking new form of
-                    therapy. Their concept catches on, with underground "fight
-                    clubs" forming in every town, until an eccentric gets in the
-                    way and ignites an out-of-control spiral toward oblivion.
-                  </p>
-                  <button className="btn btn-solid">Details</button>
-                </div>
-              </div>
+              ))}
             </section>
           </main>
         )}

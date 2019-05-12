@@ -5,10 +5,12 @@ import FormatDate from "../FormatDate/FormatDate";
 import "./MovieContainer.scss";
 
 const MovieContainer = props => {
+  console.log("props", props);
   return (
     <div className="movie-info-container">
       <div className="movie-info-intro">
-        <span className="movie-info-genre">#{props.position}</span>
+        <span className="movie-info-position">#{props.position}</span>
+        <span className="movie-info-genre">{props.movie.genres[0].name}</span>
         <span className="movie-info-releaseDate">
           Released: <FormatDate date={props.movie.release_date} />
         </span>
