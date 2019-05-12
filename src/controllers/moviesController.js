@@ -25,18 +25,55 @@ exports.movies_find = (req, res) => {
 };
 
 // movies_top5: Returns top 5 movies for month.
+//////originalfunction
+// async function getPopular(pageNum) {
+//   // Build request URL
+//   const reqUrl = `${url}/popular?api_key=${apiKey}&language=${language}&page=${pageNum}`;
+//   // Axios request
+//   return axios.get(reqUrl);
+// }
+///////////////////////
 async function getPopular(pageNum) {
   // Build request URL
   const reqUrl = `${url}/popular?api_key=${apiKey}&language=${language}&page=${pageNum}`;
-  console.log("reqUrl", reqUrl);
+  const response = await axios.get(reqUrl);
+  let movies = response.data.results.slice(0, 5).map(movie => {
+    return getDetail(movie.id);
+  });
+  return Promise.all(movies).then(completed => {
+    console.log("getPopular: Promise completed", completed);
+    return completed;
+  });
+}
+async function getDetail(id) {
+  const reqUrl = `${url}/${id}?api_key=${apiKey}&language=${language}`;
   // Axios request
-  return axios.get(reqUrl);
+  let data = await axios.get(reqUrl);
+  return data.data;
+}
+async function getDetails(arrIds) {
+  console.log("getDetails: arrIds", arrIds);
+  let movies = arrIds.map(async movie => {
+    console.log("getDetails arrIds.map movie", movie);
+    return getDetail(movie);
+  });
+  Promise.all(movies).then(completed => {
+    console.log("getDetails: Promise.all completed", completed);
+    return completed;
+  });
 }
 exports.movies_top5 = async (req, res) => {
   try {
     const responseData = await getPopular(1);
-    console.log("Raw response: ", responseData.data.results.slice(0, 5));
-    res.status(200).send(responseData.data.results.slice(0, 5));
+    // const movieData = await getDetails(
+    //   responseData.data.results.slice(0, 5).map(x => x.id)
+    // );
+    // Promise.all(movieData).then(completed => {
+    //   console.log("Raw response (movieData)", completed);
+    //   res.status(200).send(completed);
+    // });
+    console.log("movies_top5: responseData", responseData);
+    res.status(200).send(responseData);
   } catch (event) {
     console.log("Axios/Error: ", event.stack);
     res.status(500).send({ error: event.message });

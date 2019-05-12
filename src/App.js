@@ -1,45 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./App.scss";
 import logo from "./logo.svg";
+import json5 from "./tempdata/temp5.json";
+// Components
+import MoviePrimaryContainer from "./components/MovieContainer/MoviePrimaryContainer";
 
-function App() {
-  const background =
-    "http://image.tmdb.org/t/p/original/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg";
+const useAppState = () => {
+  const getTop5 = json5;
+  const [top5] = useState(getTop5);
+
+  // const setAppState = () => {
+  //   setTop5(getTop5);
+  // };
+
+  return {
+    top5
+  };
+};
+const App = props => {
+  const { top5 } = useAppState();
+  const imgUrl = "https://image.tmdb.org/t/p";
+  const size = {
+    original: "/original",
+    w500: "/w500"
+  };
+  const primary = top5[0];
+  console.log("primary", primary);
+
+  // const background =
+  //   "http://image.tmdb.org/t/p/original/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg";
   return (
     <div className="App">
-      <div class="flex-wrapper">
+      <div className="flex-wrapper">
         <header>
           <img src={logo} alt="nevizen" />
         </header>
         <main>
-          <section className="movie-primary-wrapper">
-            <div
-              className="movie-primary-container"
-              style={{
-                backgroundImage: `url(${background})`
-              }}
-            >
-              <div className="movie-info-container">
-                <div className="movie-info-intro">
-                  <span className="movie-info-genre">Drama</span>
-                  <span className="movie-info-releaseDate">
-                    October 15, 1999
-                  </span>
-                </div>
-                <h1 className="movie-info-title">Fight Club</h1>
-                <p className="movie-info-tagline">Mischief. Mayhem. Soap.</p>
-                <p className="movie-info-description">
-                  A ticking-time-bomb insomniac and a slippery soap salesman
-                  channel primal male aggression into a shocking new form of
-                  therapy. Their concept catches on, with underground "fight
-                  clubs" forming in every town, until an eccentric gets in the
-                  way and ignites an out-of-control spiral toward oblivion.
-                </p>
-                <button className="btn btn-solid">Details</button>
-              </div>
-            </div>
-          </section>
+          <MoviePrimaryContainer
+            movies={top5}
+            imgUrl={imgUrl + size.original}
+          />
           <section className="movie-secondary-wrapper">
             <div className="movie-secondary-container">
               <img
@@ -154,6 +155,6 @@ function App() {
       </footer>
     </div>
   );
-}
+};
 
 export default App;
