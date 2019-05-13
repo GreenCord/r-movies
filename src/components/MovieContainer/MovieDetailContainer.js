@@ -16,6 +16,14 @@ const MovieDetailContainer = props => {
       <section className="movie-detail-wrapper">
         <div className="movie-detail-container">
           <header>
+            <p>
+              <button
+                onClick={() => props.onClick(props.selectedMovie, true)}
+                style={{ backgroundColor: "#00cc00" }}
+              >
+                Temp: Click to Close
+              </button>
+            </p>
             <h2>Overview</h2>
             <p>{props.selectedMovie.overview}</p>
             <img

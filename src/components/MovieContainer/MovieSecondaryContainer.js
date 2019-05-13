@@ -10,7 +10,7 @@ const MovieSecondaryContainer = props => {
       {props.movies.slice(1, 5).map((movie, i) => (
         <div
           key={movie.id}
-          onClick={() => props.onClick(movie, i + 2)}
+          onClick={() => props.onClick(movie, false)}
           className="movie-secondary-container"
         >
           <img

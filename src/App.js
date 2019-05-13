@@ -73,8 +73,8 @@ const App = props => {
   //   w500: "/w500"
   // };
 
-  const onSelectItem = item => {
-    selectIt(item);
+  const onSelectItem = (item, remove) => {
+    selectIt(item, remove);
     window.scrollTo(0, 0);
   };
   // const background =
@@ -91,6 +91,7 @@ const App = props => {
               size={size}
               displayDescription={false}
               displayCta={false}
+              onClick={onSelectItem}
             />
           ) : isLoading ? (
             <Loading />
