@@ -15,17 +15,21 @@ import MoviePrimaryContainer from "./components/MovieContainer/MoviePrimaryConta
 import MovieSecondaryContainer from "./components/MovieContainer/MovieSecondaryContainer";
 
 // Temporary Data for Development
-// import tempSelectedMovie from "./tempdata/tempSelectedMovie.json";
-// import tempTop5 from "./tempdata/temp5.json";
-// const tempSelectedMovie = {};
+import tempSelectedMovie from "./tempdata/tempSelectedMovie.json";
+import tempTop5 from "./tempdata/temp5.json";
 
 const useAppState = () => {
-  const [top5, setTop5] = useState([]);
-  // const [top5, setTop5] = useState(tempTop5);
-  const [isLoading, setIsLoading] = useState(true);
-  // const [isLoading, setIsLoading] = useState(false);
-  const [selectedMovie, setSelectedMovie] = useState({});
-  // const [selectedMovie, setSelectedMovie] = useState(tempSelectedMovie);
+  // Set these for dev, no API calls
+  const [top5, setTop5] = useState(tempTop5);
+  const [isLoading, setIsLoading] = useState(false);
+  const [selectedMovie, setSelectedMovie] = useState(tempSelectedMovie);
+
+  // Set these for builds
+  // const [top5, setTop5] = useState([]);
+  // const [isLoading, setIsLoading] = useState(true);
+  // const [selectedMovie, setSelectedMovie] = useState({});
+
+  // Static definitions, may use state in the future
   const [url] = useState("/api/movies/top5");
   const [imgUrl] = useState("https://image.tmdb.org/t/p");
   const [size] = useState({
@@ -36,9 +40,13 @@ const useAppState = () => {
   useEffect(() => {
     const getMovies = async () => {
       setIsLoading(true);
-      const response = await axios(url);
-      setTop5(response.data);
-      // setTop5(tempTop5);
+
+      // Set for dev - no API calls
+      setTop5(tempTop5);
+      // Set for builds
+      // const response = await axios(url);
+      // setTop5(response.data);
+
       setIsLoading(false);
     };
     getMovies();

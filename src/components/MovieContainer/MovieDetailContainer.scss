@@ -1,6 +1,12 @@
 @import '../../scss/variables';
 
 .movie-detail-wrapper {
+  background: #fff;
+  position: relative;
+  z-index: 2;
+
+  padding-bottom: $margin-default*2;
+  padding-top: $margin-default*2;
   width: 100%;
 
   .movie-detail-container {
@@ -9,18 +15,47 @@
     padding: $margin-default;
     width: 100%;
 
-    img {
-      max-width: $margin-default*10;
-      width: 100%;
+    .movie-detail-reviews {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-gap: $margin-default/2;
+
+      .section-item {
+        .section-byLine {
+          font-weight: $black;
+        }
+      }
     }
+
   }
+      .return {
+  padding: $margin-default;
+
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+}
 }
 
 @media only screen and (min-width: 768*$px) {
   .movie-detail-wrapper {
-    img {
-      float: right;
-      margin-left: $margin-default;
+    .movie-detail-container {
+      .movie-detail-reviews {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: $margin-default;
+
+        .section-header {
+          grid-column: span 2;
+        }
+
+        .section-item {
+          border: 1px solid $color-medium-light;
+          padding: $margin-default/2;
+
+        }
+      }
     }
   }
 }

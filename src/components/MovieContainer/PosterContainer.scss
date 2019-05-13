@@ -1,0 +1,58 @@
+@import '../../scss/variables';
+
+.poster-wrapper {
+  background: $color-dark;
+  color: $color-light;
+  font-size: 0;
+  line-height: 1;
+  width: 100%;
+
+  .poster-container {
+    margin: 0 auto;
+    max-width: 1366*$px;
+    padding: $margin-default/2;
+    width: 100%;
+
+    img {
+      position: relative;
+      z-index: 3;
+
+      border: 2px solid $color-light;
+      box-shadow: $dropshadow;
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      margin: -$margin-default*2 auto $margin-default/2;
+      max-width: 290*$px;
+      width: 100%;
+    }
+
+    .poster-overview-text {
+      font-size: 16*$px;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media only screen and (min-width: 768*$px) {
+  .poster-wrapper {
+    .poster-container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-column-gap: $margin-default;
+      align-items: center;
+      justify-items: left;
+
+      img {
+        margin-bottom: -$margin-default*2;
+      }
+
+      .poster-overview-text {
+        font-size: 18*$px;
+        line-height: 1.6;
+        margin: 0;
+        max-width: 700*$px;
+      }
+    }
+  }
+}
