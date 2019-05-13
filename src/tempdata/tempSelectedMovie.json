@@ -1,69 +1,40 @@
 {
   "adult": false,
-  "backdrop_path": "/nmV9MdbzST4xv8WMHwhVgxkHHjM.jpg",
-  "belongs_to_collection": null,
-  "budget": 80000000,
+  "backdrop_path": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+  "belongs_to_collection": {
+    "id": 86311,
+    "name": "The Avengers Collection",
+    "poster_path": "/qJawKUQcIBha507UahUlX0keOT7.jpg",
+    "backdrop_path": "/zuW6fOiusv4X9nnW3paHGfXcSll.jpg"
+  },
+  "budget": 356000000,
   "genres": [
-    {
-      "id": 35,
-      "name": "Comedy"
-    },
     {
       "id": 12,
       "name": "Adventure"
     },
     {
-      "id": 14,
-      "name": "Fantasy"
+      "id": 878,
+      "name": "Science Fiction"
     },
     {
       "id": 28,
       "name": "Action"
     }
   ],
-  "homepage": "http://www.shazammovie.com",
-  "id": 287947,
-  "imdb_id": "tt0448115",
+  "homepage": "https://www.marvel.com/movies/avengers-endgame",
+  "id": 299534,
+  "imdb_id": "tt4154796",
   "original_language": "en",
-  "original_title": "Shazam!",
-  "overview": "A boy is given the ability to become an adult superhero in times of need with a single magic word.",
-  "popularity": 312.937,
-  "poster_path": "/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
+  "original_title": "Avengers: Endgame",
+  "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+  "popularity": 311.829,
+  "poster_path": "/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
   "production_companies": [
     {
-      "id": 9993,
-      "logo_path": "/2Tc1P3Ac8M479naPp1kYT3izLS5.png",
-      "name": "DC Entertainment",
-      "origin_country": "US"
-    },
-    {
-      "id": 429,
-      "logo_path": "/2Tc1P3Ac8M479naPp1kYT3izLS5.png",
-      "name": "DC Comics",
-      "origin_country": "US"
-    },
-    {
-      "id": 12,
-      "logo_path": "/iaYpEp3LQmb8AfAtmTvpqd4149c.png",
-      "name": "New Line Cinema",
-      "origin_country": "US"
-    },
-    {
-      "id": 174,
-      "logo_path": "/ky0xOc5OrhzkZ1N6KyUxacfQsCk.png",
-      "name": "Warner Bros. Pictures",
-      "origin_country": "US"
-    },
-    {
-      "id": 11565,
-      "logo_path": null,
-      "name": "The Safran Company",
-      "origin_country": "US"
-    },
-    {
-      "id": 73669,
-      "logo_path": "/usfW3lL4cL8eatNAlhfRrryyKkK.png",
-      "name": "Seven Bucks Productions",
+      "id": 420,
+      "logo_path": "/hUzeosd33nzE5MCNsZxCGEKTXaQ.png",
+      "name": "Marvel Studios",
       "origin_country": "US"
     }
   ],
@@ -73,47 +44,722 @@
       "name": "United States of America"
     }
   ],
-  "release_date": "2019-03-23",
-  "revenue": 321937864,
-  "runtime": 132,
-  "spoken_languages": [],
+  "release_date": "2019-04-24",
+  "revenue": 2485499739,
+  "runtime": 181,
+  "spoken_languages": [
+    {
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
   "status": "Released",
-  "tagline": "Just Say The Magic Word",
-  "title": "Shazam!",
+  "tagline": "Part of the journey is the end.",
+  "title": "Avengers: Endgame",
   "video": false,
-  "vote_average": 7.2,
-  "vote_count": 1500,
+  "vote_average": 8.6,
+  "vote_count": 5082,
   "videos": {
     "results": [
       {
-        "id": "5b5383370e0a26231c016fc5",
+        "id": "5c8a4d5b0e0a267d08c32f18",
         "iso_639_1": "en",
         "iso_3166_1": "US",
-        "key": "go6GEIrcvFY",
-        "name": "SHAZAM! - Official Teaser Trailer [HD]",
+        "key": "hA6hldpSTF8",
+        "name": "Marvel Studios' Avengers - Official Trailer",
         "site": "YouTube",
         "size": 1080,
         "type": "Trailer"
       },
       {
-        "id": "5c44e2c2c3a368478281a112",
+        "id": "5c8a4d740e0a26042bc441ef",
         "iso_639_1": "en",
         "iso_3166_1": "US",
-        "key": "yJCbtNZ18O8",
-        "name": "SHAZAM! - In Theaters April 5",
+        "key": "TcMBFSGVi1c",
+        "name": "Marvel Studios' Avengers: Endgame - Official Trailer",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Trailer"
+      },
+      {
+        "id": "5c93af740e0a261053e9026d",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "-iFq6IcAxBc",
+        "name": "Marvel Studios' Avengers: Endgame - Big Game TV Spot",
         "site": "YouTube",
         "size": 1080,
         "type": "Teaser"
       },
       {
-        "id": "5c85df70c3a36839d4d5b557",
+        "id": "5c93d507c3a3682e5ff166b2",
         "iso_639_1": "en",
         "iso_3166_1": "US",
-        "key": "uilJZZ_iVwY",
-        "name": "SHAZAM! - Official Trailer 2 - Only In Theaters April 5",
+        "key": "3h4cAU2Jz_Q",
+        "name": "Marvel Studios’ Avengers: Endgame | “Honor” TV Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5c9a8757c3a36873193cea4f",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "zTGdTEHvRoc",
+        "name": "Marvel Studios' Avengers Endgame | \"We Lost\" Featurette",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5ca36bfbc3a3682b1610f181",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "KCSNFZKbhZE",
+        "name": "Marvel Studios’ Avengers: Endgame | Special Look",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5ca8d163925141566efe2b96",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "unJzy1XwQ2k",
+        "name": "Marvel Studios' Avengers: Endgame | \"Stakes\" Featurette",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cab81a39251415654026037",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "9QbltzIUV6w",
+        "name": "Marvel Studios’ Avengers: Endgame | Film Clip",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Clip"
+      },
+      {
+        "id": "5caf6576c3a3683c22aa9bfa",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "81UOofW82FY",
+        "name": "Marvel Studios' Avengers: Endgame | \"Mission\" Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5cb4b0fc9251412fa329eabe",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "Td1diFNqe6c",
+        "name": "Marvel Studios' Avengers: Endgame | \"No Mistakes, Kids\" TV Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5cb5e6b9c3a3686b0481c5f2",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "0jNvJU52LvU",
+        "name": "Marvel Studios’ Avengers: Endgame | “To the End” TV Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5cb765f50e0a266ba4ef60fc",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "S_32rARQ5yw",
+        "name": "Marvel Studios’ Avengers: Endgame | “Awesome” TV Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5cb7663b0e0a266ba4ef612b",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "vnAKVlnQTzY",
+        "name": "Russo Brothers Interview Avengers Endgame",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cb8a83c92514108dbf805c6",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "v0bClKEy1HA",
+        "name": "Marvel Studios’ Avengers: Endgame | “Found” TV Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5cbd509a0e0a261a55f2b62b",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "tijLYuIjrxw",
+        "name": "Marvel Studios’ Avengers: Endgame | “Powerful” TV Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5cbe0f0e92514108d8ffc3a1",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "yR_7h9b2OPo",
+        "name": "Marvel Studios' Avengers: Endgame | \"Time\" TV Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5cbe8cb392514108d80060bc",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "5xyNqemLNxk",
+        "name": "Marvel Studios' Avengers: Endgame | LIVE Red Carpet World Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbe906992514108d800636c",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "0ESZs5OYwuw",
+        "name": "Scarlett Johansson & Chris Pratt take over at Avengers: Endgame LIVE Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea31692514151cafab298",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "5ZvcuFF2ffo",
+        "name": "Benedict Wong's Marvel Journey LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea32392514108d800746a",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "73TEwTxSUjk",
+        "name": "Hiroyuki Sanada joins the MCU LIVE from the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea3ae0e0a2615fdf1f36e",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "ZTPKBznD7eg",
+        "name": "Avengers: Endgame Executive Producer Louis D'Esposito LIVE at the Red Carpet Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea3c292514108d8007512",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "lhZr-Vk1RKk",
+        "name": "Composer Alan Silvestri on the Final Avengers Score LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea418c3a36809ab803d90",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "JohLpoEFwx4",
+        "name": "Karen Gillan talks Nebula's Journey LIVE from the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea444c3a3686b0b8fee2a",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "GMUNfOsKd-k",
+        "name": "Taika Waititi Brings the Party to the LIVE Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea4520e0a2615fdf1f47b",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "o0MsvHxFDC8",
+        "name": "Laurence Fishburne on growing up reading Marvel Comics at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea496c3a3687f8f87ef4e",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "xNiBNz61LRI",
+        "name": "Kevin Feige talks the expansive MCU LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea4a992514108d80075dd",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "p5fthh_F4SM",
+        "name": "Linda Cardellini talks keeping secrets at the LIVE Marvel Studios' Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea4ba0e0a2615fdf1f4d6",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "N2QLF5yKUf0",
+        "name": "Elizabeth Olsen on Scarlet Witch and Vision LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea4d2c3a36809ab803e19",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "0X10T__DDfE",
+        "name": "Danai Gurira and Paul Rudd Talk the Snap LIVE from the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea4e292514108d8007607",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "o4mXzaCxkok",
+        "name": "Don Cheadle talks what makes a real world hero LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea4f2c3a368694c891836",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "Dyo7Kbijr98",
+        "name": "Jeremy Renner talks prepping as Hawkeye for Avengers: Endgame at the World Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea507925141066efaae29",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "1L6mMs_hr4k",
+        "name": "Neal Kirby talks about his father, Jack Kirby's, Marvel Legacy at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea5160e0a2615fdf1f51d",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "gNW20bP1Kdo",
+        "name": "Robert Downey Jr & Jon Favreau talk 10 years of Iron Man at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea54f0e0a266b96fa5e52",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "dTSQjc8cegY",
+        "name": "Danai Gurira talks working with the surviving Avengers LIVE from the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea55e0e0a2641edf480f9",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "jBleVtbciI0",
+        "name": "Bob Iger on the legacy of Marvel LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea571c3a36809ab803e79",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "L41F3mw89mY",
+        "name": "Christopher Markus & Stephen McFeely (Screenwriters) LIVE from the Avengers: Endgame Red Carpet",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea57f0e0a261a55f48a52",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "PV_79Nr07e8",
+        "name": "Anthony Mackie talks Falcon's fate LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea58cc3a368596a8084f0",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "QV9GCWg2u2A",
+        "name": "Benedict Cumberbatch on working with the Russo Brothers LIVE on the Avengers: Endgame Red Carpet",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea5d492514108d10008a0",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "vwfVWFOPBCY",
+        "name": "Brie Larson talks Captain Marvel joining the team LIVE from the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea5f3c3a36809ab803f03",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "GJLcCgS7Mzw",
+        "name": "Paul Rudd hopes Ant-Man is in Avengers: Endgame",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea6000e0a2615fdf1f5e5",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "H3_l1DIbLvU",
+        "name": "Gwyneth Paltrow on Pepper Potts through the years at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea63ac3a36872c98a8e7b",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "EnRzM4bE6M4",
+        "name": "Directors Anthony and Joe Russo on a journey's end LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea6c492514151cafab58a",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "a6Yib8P5Xr4",
+        "name": "Vin Diesel feels his \"Groot-ness\" LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea6fe925141066efaafea",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "0hWwnPV502c",
+        "name": "Tessa Thompson on suriving the snap at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea7890e0a26105af44c9b",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "G3mpwCsvpQ0",
+        "name": "Clark Gregg looks back on Coulson LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea7990e0a266b96fa603d",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "9nusLMvCTsI",
+        "name": "Letitia Wright reacts to Shuri getting snapped by Thanos LIVE from the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea7a8c3a368694c891aed",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "_sh7eWx4jqE",
+        "name": "Emma Lahana and Ally Maki bring the Mayhem LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea7b9c3a36872c98a9021",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "5rCdDerNNXk",
+        "name": "David Dastmalchian LIVE from the Avengers: Endgame Red Carpet Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea7cbc3a36809ab80418b",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "mtcqn3HQ-Uw",
+        "name": "Cobie Smulders Talks About Maria Hill's Connecting Role LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea7df9251417d39fad131",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "F0VjvcyZTvA",
+        "name": "Natalie Portman talks girl power in the Marvel Universe LIVE from the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea7f90e0a2654e9f01ef4",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "v5U5_U-0udc",
+        "name": "Letitia Wright and Pom Klementieff talk filming LIVE from the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea8100e0a2615fdf1f841",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "ELAJHo2apmE",
+        "name": "S.H.I.E.L.D. Director Henry Simmons LIVE at the Avengers: Endgame Premier",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea82dc3a3687f8f87f386",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "ak3Kg52IT1k",
+        "name": "Agents of S.H.I.E.L.D. Natalia Cordova-Buckley LIVE from the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea843c3a36872c98a90ed",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "KbRO_a44yA0",
+        "name": "Agents of S.H.I.E.L.D. Ming-Na Wen LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea85492514108d1000b46",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "6slAQbysMyk",
+        "name": "Thanos Creator Jim Starlin LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea86a925141097dfa9193",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "aOQYHWZ9VUw",
+        "name": "Sean Gunn LIVE from the Avengers Endgame Red Carpet Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cbea8799251412577f975c9",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "zlNlkwB27lU",
+        "name": "Marvel Studios' Avengers: Endgame Red Carpet | Best Moments!",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cc0b939925141097dfd158f",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "1VBJ-kNsmaQ",
+        "name": "Marvel Studios' Avengers: Endgame | Paul Rudd Exclusive Look",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cc11f42925141097dfdc335",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "RBfggCYNWNk",
+        "name": "Marvel Studios’ Avengers: Endgame | “Go” TV Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5cc11f5a0e0a2654e9f395db",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "Bqp_zK09NZ8",
+        "name": "Sebastian Stan talks the end of the line LIVE at the Avengers: Endgame Premiere",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cc11f910e0a266b96fdbe8c",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "-xtbxLRUREs",
+        "name": "Mark Ruffalo, Chris Hemsworth & Anthony Mackie Try Not to Spoil Avengers: Endgame at the Red Carpet",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cc11fbd925141066efdbbed",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "kwo0wSabwBk",
+        "name": "Marvel Studios' Avengers: Endgame | \"Everything\" TV Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5cc1cd580e0a260b0fece2a8",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "n92qDDd9E1U",
+        "name": "Marvel Studios' Avengers: Endgame | Big Review TV Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5cc34c9ac3a368776c8ff6f2",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "AMSITikqKiM",
+        "name": "Marvel Studios' Avengers: Endgame | Policy Trailer",
         "site": "YouTube",
         "size": 1080,
         "type": "Trailer"
+      },
+      {
+        "id": "5cc5bee3c3a3683ad5818227",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "F6d-LqmvLsA",
+        "name": "Audi “The Debriefing” - Marvel Studios’ Avengers: Endgame",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Featurette"
+      },
+      {
+        "id": "5cc5dcb59251415cd2f96dc1",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "QIHmrnvLhBg",
+        "name": "The Making of Avengers: Endgame | Part 1 | Filmed with IMAX® Cameras",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Behind the Scenes"
+      },
+      {
+        "id": "5cc6ab75c3a3683ad5831972",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "A5H9dPaZp_8",
+        "name": "The Making of Avengers: Endgame | Part 2 | Filmed with IMAX® Cameras",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Behind the Scenes"
+      },
+      {
+        "id": "5cd392e60e0a266ce0fe4dd0",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "I8o0a71EI74",
+        "name": "Marvel Studios’ Avengers: Endgame | “Prestige” TV Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5cd461140e0a265deb61405d",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "9tKr3m6r9NI",
+        "name": "Marvel Studios’ Avengers: Endgame | “Hulk Out” Exclusive Clip",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Clip"
+      },
+      {
+        "id": "5cd4d694c3a36869dafcc6c5",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "cn69-oTB8hY",
+        "name": "Marvel Studios' Avengers: Endgame | \"Save\" TV Spot",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
       }
     ]
   },
@@ -122,24 +768,363 @@
     "results": [
       {
         "author": "garethmb",
-        "content": "Growing up I was a regular viewer of the Shazam and Isis “Super Power Hour” on television. Back before the days of mega-budgeted Super Hero movies; we had to content ourselves with cartoons and low budget television offerings which did their best to capture the look and action of comic characters within the budget and technology limits they had to deal with.\r\nWarner Bros. has brought their latest DC hero to the big screen with “Shazam!” and it looks to launch a new franchise for the studio and build on the success of “Wonder Woman” and “Aquaman” following some earlier disappointments with their planned hero franchise films.\r\nThe film follows the story of young Billy Batson (Asher Angel), who has grown up in and fled several Foster Homes after being lost at a Carnival years earlier and unable to find his mother. Billy has never stopped trying to find her and even takes extreme measures to try to find her that has gotten him in trouble with the law.\r\nWhile trying to stick up for a family member at his latest Foster Home; Billy is forced to flee from some local goons and finds himself facing an ancient Wizard (Djimon Honsou; who tells him he will now have superior powers when he speaks his name as he is now a guardian against the forces of evil.\r\nBilly does not believe this but upon uttering the name; he transforms into a powerful hero in adult form. Zach Levi plays the title hero and soon finds himself eager to test his new powers and his Super Hero obsessed Foster Brother is more than happy to mentor him and make all sorts of viral videos of his efforts and training.\r\nTheir efforts soon draw the attention of an evil individual (Mark Strong), who covets the power Billy has for himself as along with the Seven Deadly Sins; he looks to become an unstoppable force for evil and sets out to destroy all that stands in his way.\r\nThe film is aimed more for a younger audience as much of the humor is squarely focused on Middle School level jokes. There are more than a few references to “Big” along the way which does sum up a good portion of the backstory as when he is in hero form; the young boy without a family is a popular and dynamic adult.\r\nIn many ways this was one of the more odd aspects of the film. Billy is a dour and untrusting individual most of the time; however when he is hero form he is a jovial and goofy individual who acts like a teenager. I could see an increase in confidence but it is odd considering that they are the same person.\r\nLevi is very energetic in the part and goes all in and he does a great job of conveying a kid in a man’s body. The biggest issue with the film is that there is mostly a lot of humor aimed at a much younger audience and large gaps with minimal action which made sitting through numerous childish antics a bit tedious at times.\r\nDespite this; the film was entertaining and one of the better adaptions of a comic. The door is wide open for future adventures and I look forward to seeing what they come up with next.\r\n3.5 stars out of 5",
-        "id": "5c9cfb4792514124dc3145be",
-        "url": "https://www.themoviedb.org/review/5c9cfb4792514124dc3145be"
+        "content": "The epic Marvel Saga that started over ten years ago has been building up to the inevitable clash with the powerful tyrant Thanos (Josh Brolin).  Last year’s “Avengers: Infinity War” set the stage for the highly-anticipated conclusion; “Avengers: End Game” and at long last it has arrived.\r\n\r\nPicking up shortly after the events of the last film, the Avengers must deal with the aftermath of what Thanos has done. The team is naturally divided between wanting revenge, wanting to set things right, and just wanting to take what they have and go on. \r\n\r\nAs time passes and they struggle to accept the reality of their situation; an unexpected individual returns and with them comes the seeds of a new plan to make things right. Naturally Tony Stark (Robert Downey Jr.) is skeptical but eventually warms to the possibilities of the idea thanks to a new scientific breakthrough that makes it possible.\r\n\r\nInspired, Tony sets out to put an elaborate plan in motion that will allow the team to try to fix things and to stop Thanos once and for all.\r\n\r\nWhat follows is an extended and at times nostalgic heist where various members of the team work to assemble the pieces needed for the plan as they believe they only have one chance to make things right.\r\n\r\nThe film is essentially three acts in one. The first deals with the recap and expansion of their situation and the planning. The second act is basically a heist where action and comedy are blended with some touching moments.\r\n\r\nThis all leads to the final act which is the FX laden set piece where the ensemble cast gathers to fight the forces of evil in a battle to save the Universe.\r\nThe film is epic in scale and length as it clocks in at over three hours but the movie is filled with so much content that the time goes by quickly and you have a hard time believing three hours have elapsed.\r\n\r\nIt is also a difficult film to review as you cannot recap elements of the film in any great detail without giving away elements that are sure to delight the fans. Suffice it to say that my only real issue with the fil and it was minor; was that it took a while to get to the action but at least there was plenty to keep you entertained along the way.\r\n\r\nAs this phase of the Marvel Film Universe winds down and plans are put in place for the next five years; “Avengers: End Game” is a satisfying conclusion to the epic saga that was started many years ago and weaves elements of many of the past Marvel films into an entertaining tale which features all of the best elements that have made the series of films such big hits.\r\n\r\n4.5 stars out of 5",
+        "id": "5cbf94670e0a266b96fba5ef",
+        "url": "https://www.themoviedb.org/review/5cbf94670e0a266b96fba5ef"
+      },
+      {
+        "author": "Gimly",
+        "content": "Hey, so, just some really quick thoughts I wanna get down, 'cause it's after 1 o'clock in the morning, and I wanna get some sleep so I can wake up well rested to see _Endgame_ again.\r\n\r\nPutting it out there right from the get-go, _Avengers: Endgame_ is my favourite MCU movie. It's my favourite movie of the year too, but I've only seen like ten or so 2019 releases, and this is the 22nd Marvel Cinematic Universe film, so that seems far and away the bigger deal. I can't say it's perfect, there's some conflicting stuff within its own runtime that really doesn't seem to gel (though a re-watch may prove me wrong on that), and it's not like every moment was the no-holds-barred-zero-exception best version of that moment from start to end. But God I loved this thing.\r\n\r\nI will say this though, the reason that I loved it, is this thing is fan service galore. If you do not care for the franchise's 21 movies preceding this point, then _Endgame_ is not the movie to turn you around on that. That may come in a future installment, but this one is a culmination. It's the end of _Infinity War_ but also Phase 3, but also a wrap-up and genuine ode to/send off for everything that Marvel has done over the past 11 years. That to me was incredible, and I am eternally greatful, but I cannot imagine it working for people who have no vested interest in these characters.\r\n\r\nTo me though? My first 9 out of 10 rating in **three years**.\r\n\r\n_Final rating:★★★★½ - Ridiculously strong appeal. I can’t stop thinking about it._",
+        "id": "5cc07fa00e0a2615fdf464d3",
+        "url": "https://www.themoviedb.org/review/5cc07fa00e0a2615fdf464d3"
       },
       {
         "author": "msbreviews",
-        "content": "If you enjoy reading my spoiler-free reviews, please follow my blog :)\r\n\r\nFirst of all, I didn’t know anything about Shazam. What his powers were, what story did he have … Basically, I didn’t know who he was. This is what David F. Sandberg‘s movie does best: introduce the audience to a new DC superhero, by delivering an uncommonly well-structured comic-book screenplay, packed with laughter and entertaining action. Zachary Levi is undoubtedly the standout! Not only is he hilarious, but he perfectly captures the childlike personality that a kid-turned-adult would have. His expressions of absolute surprise and awe of his powers are extremely precious, and he effortlessly carries the more lighthearted tone on his shoulders.\r\n\r\nAsher Angel is brilliant as Billy Batson. His character has a notably well-written and well-explored backstory, which eventually justifies the person he has become. It’s the most emotional and heartfelt subplot of the film (probably the only one, really), and Henry Gayden did a fantastic job writing its script. It doesn’t feel cliche or over-the-top, it actually feels grounded and quite realistic. Jack Dylan Grazer plays his best friend, Freddy Freeman, and he’s the primary source of self-aware comedy. He knows all the cliches regarding superheroes and supervillains, so his jokes constantly land and play seamlessly into the last act.\r\n\r\nUsually, villains tend to be hollow characters with paper-thin motivations, but since a few years ago, this issue has gradually been corrected. The latest comic-book movies have incredibly well-developed villains, who carry a compelling backstory that entirely supports their beliefs, but not their actions. This type of villains work because not only the audience can understand where they come from, but in some cases, they can even connect with and care about them. Dr. Thaddeus Sivana is not exactly someone the audience ends up caring about, but his backstory is emotionally powerful enough for us to understand where his motivations originate from. Mark Strong delivers a menacing performance, and his costume/make-up looks pretty badass.\r\n\r\nThe first act is kind of a mixed bag. It starts in a very captivating way, and once you understand who’s the character at the center, it gets even better. However, the film’s tone takes long to establish itself, and the beginning of the movie struggles to find which jokes land and which don’t. The humor is on-point throughout the rest of the runtime, but those first few jokes not so much, which threw me off a little bit. The action sequences are amazing, and the sound design allows the audience to feel every punch, kick, a fall on the ground or a Superman-ish take-off. The fight sequences are seamlessly edited, and you know how much I love well-choreographed or well-edited action scenes.\r\n\r\nShazam‘s search for his powers provides the funniest and most entertaining moments of the film. Each test that he puts himself through is both hilarious and informative. This is another aspect of the screenplay I love so much: they had several ideas of how to approach this segment, and they nailed every single execution. From the pop-culture references to the hero-villain cliches, Sandberg did a terrific job exploring those concepts, and he executed them flawlessly. The best jokes are the ones that can be funny on different levels for different people. If people can laugh at a particular scene solely due to it, but other people can laugh even more because that moment means so much more to them, that’s when you know a joke is perfect. Shazam is not only funny for comic-book fans, everyone can leave the theater entertained and jolly.\r\n\r\nIt’s still a straightforward superhero movie. There’s still a villain to defeat, and the film goes through all of the cliches that it makes so much fun of. Everyone knows how it’s going to develop, plot point by plot point, a few minutes in. Not that I consider this a flaw, it’s just … It is what it is. The final battle drags too much, and it keeps ending and restarting every five minutes. It does have a pretty cool conclusion, but it takes a bit too long to get there. Also, and I know that this is one of those logical nitpicks that CinemaSins are known for digging, but the flashbacks and time-jumps could have received better treatment concerning the age of the characters. One thing is to think that the characters would look much older/younger than what they display on-screen, but when they make them look exactly the same in the span of 30/40 years … Not so acceptable.\r\n\r\nAll in all, Shazam is a blast! It’s the most entertaining movie I’ve seen so far this year, and it’s freaking hilarious. It continues the comic-book films trend to change how villains are written, by delivering a well-developed bad guy, menacingly portrayed by Mark Strong. Every member of the cast gives a strong performance, but Zachary Levi steals the show. His whimsical attitude, reckless personality, and rich facial expressions are guaranteed to entertain you for most of the runtime. Asher Angel and Jack Dylan Grazer are outstanding as the young kids, and the former’s backstory carries emotional impact which passes on to the big guy he transforms himself into.\r\n\r\nThe action is packed with beautifully-edited sequences, powerful sound design, and cool, unique moments, but the supposedly climactic final battle drags too much. The first act struggles to find its rhythm and its tone, but once it gets going, it’s an exceptional journey. The best praise I can give Sandberg‘s movie is that I didn’t know anything about Shazam before entering the theater, and now I can’t wait for its sequel. Well-directed, well-written and remarkably entertaining. What more can I ask? Go see it!\r\n\r\nRating: B+",
-        "id": "5ca624e20e0a2657cc9fd65b",
-        "url": "https://www.themoviedb.org/review/5ca624e20e0a2657cc9fd65b"
+        "content": "If you enjoy reading my Spoiler-Free reviews, please follow my blog :)\r\n\r\nDon't worry. This is going to be a pretty vague review. Right now, as I'm writing this sentence, I'm still processing what I saw and how am I going to explain how I felt without spoiling a single tiny thing. First of all, it's such a mix of feelings. On one hand, I'm extremely happy that I was lucky to be alive during this epic time and that I was able to follow these characters that I love and care about so much. On the other hand, I'm obviously sad that it finally reached the end of this (hopefully) first incredible saga. There are no perfect films and one with so many heroes will always have struggles balancing it all (Infinity War already had this issue). \r\n\r\nHowever, the Russo brothers did everything they could to deliver a phenomenal story, and they did. I don't think this could have been any better. Its last hour exceeds any expectations. It's epic, emotional, action-heavy, and it has one of my favorite shots in the entire history of cinema. It's pure magic, and the VFX team will surely get an Oscar for it. The action reminded me of the biggest Lord of the Rings' battles, and it was impeccably filmed, filled with riveting and chill-inducing sequences. Nevertheless, don't expect this high-intensity feeling throughout the whole runtime. The other two acts are a slow-burn build-up to a payoff that's going to make you pretty much either \"love\" or \"like\" this movie. I absolutely love it! \r\n\r\nThis is easily one of the best MCU films, if not my new number one. I can't deny that the 3-hour runtime has some unnecessary scenes, but even if they don't have a significant impact on the plot or even in the characters, they still contribute to the enormous build-up. Seeing this family that we grew up with just talking with each other or having lunch, at the same time that they deal with the consequences of Thanos' snap, is inexplicably captivating and heartwarming. Characters like Natasha (Scarlett Johansson) and Steve (Chris Evans) supporting each other is simply beautiful. Their comradery and chemistry are worthy of some tears here and there.\r\n\r\nSome people didn't really enjoy Infinity War so much due to the lack of screentime that some characters had. This time around, there are fewer characters to work with, so the balance is better. Everyone gets an important role, from Captain America to Ant-Man (Paul Rudd) to Nebula (Karen Gillan), and even Rocket (Bradley Cooper). Every single character has a major moment. If you take one out of the movie, it just doesn't work anymore. This is not only great work from the directors, but also from the writers. \r\n\r\nChristopher Markus and Stephen McFeely are not even going to be remembered because fans will always think of the cast first. Most of them will also remember the directors. But the writers?! If I stand at the door of the theater at the end of the film and question everyone about who are the writers, I strongly believe most of the audience won't know. Every dialogue, every sentence, every word carries so much impact on the narrative. Literally, I cried and got chills just by hearing two freaking words with the perfect timing in between. The amount of grief that the words of the ones who've lost everyone and everything carry is palpable and, for me, those are the most emotional moments of the movie: seeing how everyone is suffering from their own losses, not the deaths themselves.\r\n\r\nThe humor is mostly on-point, but it's still connected to my only real issue with the film, which is the second act's tone. From the moment the team decides what to do, we already know that this is a 1 in 14 million chance of success like Dr. Strange (Benedict Cumberbatch) said, so the stakes and pressure are massive! With this level of tension, I didn't expect such an “easygoing” and “funny” vibe throughout, except for one particular sequence. They do a great job once again of pairing up certain Avengers together, but most of them go through these too comedic plot points for such a crucial and serious mission. Fortunately, this act carries enough action and emotional drive to make this problem not that big of an issue.\r\n\r\nVisually, this is arguably the best-looking superhero film ever. From the mind-blowing visual effects to the gorgeous cinematography, everything is perfect. The costumes are gritty and muddy when our heroes are in a battle, their faces are all filled with blood, and I have no words to describe how jaw-dropping that last act is. I can't wait to change my desktop wallpaper once THAT shot is available. I dropped a single tear just by looking at it. No one talks, no one does anything. It's just an amazingly beautiful image. The score is epic as hell. So much that I'm listening to it right now as I'm writing this review, and I'm getting chills all over my body. \r\n\r\nI can't really write much more, to be honest. I will acknowledge the cast because they are brilliant. Each and every single member delivers an outstanding performance, but if I had to choose the ones that both surprised me and had the most impact on me, they would be Johansson's, Evans', and Robert Downey Jr's (Tony Stark / Iron Man). “New” characters like Captain Marvel (Brie Larson) blend seamlessly, and the payoff is unbelievably satisfying. In terms of predictability, it goes more or less as I expected, but it still carries a few surprises throughout. Nothing is ever like we imagine or theorize about, so expect the unexpected, and don't judge a movie by if it fits your crazy, unrealistic theories that never crossed the producers and directors' minds in the first place!\r\n\r\nAll in all, I don't know what to do now. The only thing I'm sure of is that I want to see it again, as soon as possible. The last hour is f*cking insane. I couldn't fall asleep properly because I couldn't stop thinking about it. Endgame surpasses all expectations. It's everything I wished for and so much more. I could easily spend a whole day at the movie theater and watch three sessions in a row. It's that good. One of the best comic-book films of all-time, without a single doubt. Thank you to Kevin Feige and everyone who worked hard to bring the MCU to where it stands now. I can't even think of how are they going to produce something at the level of Infinity Saga. Maybe they never will. Maybe we'll have to wait another decade or two for something like this. Until then, see you at the next Endgame screening! Enjoy! Oh and #DontSpoilTheEndgame!\r\n\r\nPS: it's not a perfect movie, I know. It doesn't exist one. Yes, Endgame has some issues regarding its pacing and tone, but I would be lying to myself if this isn't everything I dreamed of. I felt the same way with Civil War, regarding the rating to give, and I ended up giving it an A after a first viewing. As soon as I watched the second time, I changed it to an A+. I don’t need to wait for that second viewing with Endgame … And thank you to my audience for being incredibly respectful. No yelling, no crazy laughs, no stupid people doing stupid stuff. Thank you so much for not ruining one of the best cinematic experiences of my life!\r\n\r\nRating: A+",
+        "id": "5cc307bfc3a36809ab86e2fd",
+        "url": "https://www.themoviedb.org/review/5cc307bfc3a36809ab86e2fd"
       },
       {
-        "author": "Myles",
-        "content": "It's entertaining, it has heart, and it's joyful. It has been proven time and time again that these things are what is required for a good Superhero film.",
-        "id": "5ca978bbc3a3683f4c608458",
-        "url": "https://www.themoviedb.org/review/5ca978bbc3a3683f4c608458"
+        "author": "heroman",
+        "content": "okay so if your like me you questioned this movie due to the fact that i personally thought nothing could beat infinity war well after seeing it i can honestly say we have a new champion this was absolutley excelent so hilarious action packed the 3 hrs passes extremily fast my only thing is the use of god.... bothered me and i suggest if your offended by that wait till dvd so you can mute the parts also a reminder to parents 'no matter how bad you want to see the movie dont do like people in my theater did and bring your 3 year old 'but besides that awesome movie",
+        "id": "5cc5b3b1c3a36849368181c9",
+        "url": "https://www.themoviedb.org/review/5cc5b3b1c3a36849368181c9"
+      },
+      {
+        "author": "courtlynn",
+        "content": "We waited till day 5 of release in theaters. There was a slow start to the movie so i don't recommend taking little ones under the age of 10. After all the anticipation and hype,Avengers Endgame did not disappoint. Waa a perfect \"ending' to the series. Very well done",
+        "id": "5ccace3f0e0a262fb3fee8b3",
+        "url": "https://www.themoviedb.org/review/5ccace3f0e0a262fb3fee8b3"
       }
     ],
     "total_pages": 1,
-    "total_results": 3
+    "total_results": 5
+  },
+  "recommendations": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/w2PMyoyLU22YvrGK3smVM9fW1jj.jpg",
+        "genre_ids": [28, 12, 878],
+        "id": 299537,
+        "original_language": "en",
+        "original_title": "Captain Marvel",
+        "overview": "The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.",
+        "poster_path": "/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
+        "release_date": "2019-03-06",
+        "title": "Captain Marvel",
+        "video": false,
+        "vote_average": 7.1,
+        "vote_count": 4796,
+        "popularity": 282.205
+      },
+      {
+        "id": 363088,
+        "video": false,
+        "vote_count": 6020,
+        "vote_average": 7,
+        "title": "Ant-Man and the Wasp",
+        "release_date": "2018-07-04",
+        "original_language": "en",
+        "original_title": "Ant-Man and the Wasp",
+        "genre_ids": [28, 12, 35, 878, 10751],
+        "backdrop_path": "/6P3c80EOm7BodndGBUAJHHsHKrp.jpg",
+        "adult": false,
+        "overview": "Just when his time under house arrest is about to end, Scott Lang once again puts his freedom at risk to help Hope van Dyne and Dr. Hank Pym dive into the quantum realm and try to accomplish, against time and any chance of success, a very dangerous rescue mission.",
+        "poster_path": "/rv1AWImgx386ULjcf62VYaW8zSt.jpg",
+        "popularity": 70.587
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nmV9MdbzST4xv8WMHwhVgxkHHjM.jpg",
+        "genre_ids": [35, 12, 14, 28],
+        "id": 287947,
+        "original_language": "en",
+        "original_title": "Shazam!",
+        "overview": "A boy is given the ability to become an adult superhero in times of need with a single magic word.",
+        "poster_path": "/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
+        "release_date": "2019-03-23",
+        "title": "Shazam!",
+        "video": false,
+        "vote_average": 7.2,
+        "vote_count": 1490,
+        "popularity": 312.937
+      },
+      {
+        "id": 299536,
+        "video": false,
+        "vote_count": 13455,
+        "vote_average": 8.3,
+        "title": "Avengers: Infinity War",
+        "release_date": "2018-04-25",
+        "original_language": "en",
+        "original_title": "Avengers: Infinity War",
+        "genre_ids": [28, 12, 14],
+        "backdrop_path": "/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
+        "adult": false,
+        "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+        "poster_path": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+        "popularity": 148.779
+      },
+      {
+        "id": 324857,
+        "video": false,
+        "vote_count": 3693,
+        "vote_average": 8.4,
+        "title": "Spider-Man: Into the Spider-Verse",
+        "release_date": "2018-12-07",
+        "original_language": "en",
+        "original_title": "Spider-Man: Into the Spider-Verse",
+        "genre_ids": [28, 12, 16, 35, 878],
+        "backdrop_path": "/uUiId6cG32JSRI6RyBQSvQtLjz2.jpg",
+        "adult": false,
+        "overview": "Miles Morales is juggling his life between being a high school student and being a spider-man. When Wilson \"Kingpin\" Fisk uses a super collider, others from across the Spider-Verse are transported to this dimension.",
+        "poster_path": "/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+        "popularity": 77.173
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/9QusGjxcYvfPD1THg6oW3RLeNn7.jpg",
+        "genre_ids": [12, 14],
+        "id": 297802,
+        "original_language": "en",
+        "original_title": "Aquaman",
+        "overview": "Once home to the most advanced civilization on Earth, Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people and then the surface world. Standing in his way is Arthur Curry, Orm's half-human, half-Atlantean brother and true heir to the throne.",
+        "poster_path": "/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
+        "release_date": "2018-12-07",
+        "title": "Aquaman",
+        "video": false,
+        "vote_average": 6.8,
+        "vote_count": 5812,
+        "popularity": 66.684
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/VuukZLgaCrho2Ar8Scl9HtV3yD.jpg",
+        "genre_ids": [878, 28],
+        "id": 335983,
+        "original_language": "en",
+        "original_title": "Venom",
+        "overview": "Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world from a shadowy organization looking for a symbiote of their own.",
+        "poster_path": "/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg",
+        "release_date": "2018-09-28",
+        "title": "Venom",
+        "video": false,
+        "vote_average": 6.6,
+        "vote_count": 5942,
+        "popularity": 50.225
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/qrtRKRzoNkf5vemO9tJ2Y4DrHxQ.jpg",
+        "genre_ids": [12],
+        "id": 338952,
+        "original_language": "en",
+        "original_title": "Fantastic Beasts: The Crimes of Grindelwald",
+        "overview": "Gellert Grindelwald has escaped imprisonment and has begun gathering followers to his cause—elevating wizards above all non-magical beings. The only one capable of putting a stop to him is the wizard he once called his closest friend, Albus Dumbledore. However, Dumbledore will need to seek help from the wizard who had thwarted Grindelwald once before, his former student Newt Scamander, who agrees to help, unaware of the dangers that lie ahead. Lines are drawn as love and loyalty are tested, even among the truest friends and family, in an increasingly divided wizarding world.",
+        "poster_path": "/fMMrl8fD9gRCFJvsx0SuFwkEOop.jpg",
+        "release_date": "2018-11-14",
+        "title": "Fantastic Beasts: The Crimes of Grindelwald",
+        "video": false,
+        "vote_average": 6.9,
+        "vote_count": 4661,
+        "popularity": 56.193
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/3P52oz9HPQWxcwHOwxtyrVV1LKi.jpg",
+        "genre_ids": [28, 35, 12],
+        "id": 383498,
+        "original_language": "en",
+        "original_title": "Deadpool 2",
+        "overview": "Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.",
+        "poster_path": "/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg",
+        "release_date": "2018-05-10",
+        "title": "Deadpool 2",
+        "video": false,
+        "vote_average": 7.5,
+        "vote_count": 8486,
+        "popularity": 46.313
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6ELJEzQJ3Y45HczvreC3dg0GV5R.jpg",
+        "genre_ids": [28, 12, 14, 878],
+        "id": 284054,
+        "original_language": "en",
+        "original_title": "Black Panther",
+        "overview": "King T'Challa returns home from America to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantel to join with girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+        "poster_path": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+        "release_date": "2018-02-13",
+        "title": "Black Panther",
+        "video": false,
+        "vote_average": 7.4,
+        "vote_count": 12027,
+        "popularity": 98.112
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/93xA62uLd5CwMOAs37eQ7vPc1iV.jpg",
+        "genre_ids": [18, 10402],
+        "id": 424694,
+        "original_language": "en",
+        "original_title": "Bohemian Rhapsody",
+        "overview": "Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.",
+        "poster_path": "/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg",
+        "release_date": "2018-10-24",
+        "title": "Bohemian Rhapsody",
+        "video": false,
+        "vote_average": 8.1,
+        "vote_count": 7264,
+        "popularity": 50.326
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg",
+        "genre_ids": [28, 12, 16, 10751],
+        "id": 260513,
+        "original_language": "en",
+        "original_title": "Incredibles 2",
+        "overview": "Elastigirl springs into action to save the day, while Mr. Incredible faces his greatest challenge yet – taking care of the problems of his three children.",
+        "poster_path": "/9lFKBtaVIhP7E2Pk0IY1CwTKTMZ.jpg",
+        "release_date": "2018-06-14",
+        "title": "Incredibles 2",
+        "video": false,
+        "vote_average": 7.6,
+        "vote_count": 6115,
+        "popularity": 41.313
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg",
+        "genre_ids": [28, 12, 35, 14],
+        "id": 284053,
+        "original_language": "en",
+        "original_title": "Thor: Ragnarok",
+        "overview": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his home-world and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela.",
+        "poster_path": "/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+        "release_date": "2017-10-25",
+        "title": "Thor: Ragnarok",
+        "video": false,
+        "vote_average": 7.5,
+        "vote_count": 11125,
+        "popularity": 76.407
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/88poTBTafMXaz73vYi3c74g0y2k.jpg",
+        "genre_ids": [10751, 16, 35, 14],
+        "id": 404368,
+        "original_language": "en",
+        "original_title": "Ralph Breaks the Internet",
+        "overview": "Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a replacement part to save Vanellope's video game, \"Sugar Rush.\" In way over their heads, Ralph and Vanellope rely on the citizens of the internet -- the netizens -- to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart and soul of trend-making site BuzzzTube.",
+        "poster_path": "/lvfIaThG5HA8THf76nghKinjjji.jpg",
+        "release_date": "2018-11-20",
+        "title": "Ralph Breaks the Internet",
+        "video": false,
+        "vote_average": 7.2,
+        "vote_count": 2427,
+        "popularity": 54.392
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/lvjscO8wmpEbIfOEZi92Je8Ktlg.jpg",
+        "genre_ids": [53, 9648, 18, 14, 878],
+        "id": 450465,
+        "original_language": "en",
+        "original_title": "Glass",
+        "overview": "In a series of escalating encounters, security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men.",
+        "poster_path": "/svIDTNUoajS8dLEo7EosxvyAsgJ.jpg",
+        "release_date": "2019-01-16",
+        "title": "Glass",
+        "video": false,
+        "vote_average": 6.5,
+        "vote_count": 2752,
+        "popularity": 150.67
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/q7fXcrDPJcf6t3rzutaNwTzuKP1.jpg",
+        "genre_ids": [12, 878],
+        "id": 333339,
+        "original_language": "en",
+        "original_title": "Ready Player One",
+        "overview": "When the creator of a popular video game system dies, a virtual contest is created to compete for his fortune.",
+        "poster_path": "/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
+        "release_date": "2018-03-28",
+        "title": "Ready Player One",
+        "video": false,
+        "vote_average": 7.6,
+        "vote_count": 6821,
+        "popularity": 26.691
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/vc8bCGjdVp0UbMNLzHnHSLRbBWQ.jpg",
+        "genre_ids": [28, 12, 878, 18],
+        "id": 315635,
+        "original_language": "en",
+        "original_title": "Spider-Man: Homecoming",
+        "overview": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
+        "poster_path": "/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+        "release_date": "2017-07-05",
+        "title": "Spider-Man: Homecoming",
+        "video": false,
+        "vote_average": 7.4,
+        "vote_count": 11280,
+        "popularity": 56.9
+      },
+      {
+        "id": 351286,
+        "video": false,
+        "vote_count": 5818,
+        "vote_average": 6.5,
+        "title": "Jurassic World: Fallen Kingdom",
+        "release_date": "2018-06-06",
+        "original_language": "en",
+        "original_title": "Jurassic World: Fallen Kingdom",
+        "genre_ids": [28, 12, 878],
+        "backdrop_path": "/3s9O5af2xWKWR5JzP2iJZpZeQQg.jpg",
+        "adult": false,
+        "overview": "Three years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the isla Nublar, so Claire Dearing, the former park manager, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.",
+        "poster_path": "/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg",
+        "popularity": 43.432
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/5DUqFLgkLsJxyqPCAcgTivZy2SX.jpg",
+        "genre_ids": [28, 12, 878],
+        "id": 348350,
+        "original_language": "en",
+        "original_title": "Solo: A Star Wars Story",
+        "overview": "Through a series of daring escapades deep within a dark and dangerous criminal underworld, Han Solo meets his mighty future copilot Chewbacca and encounters the notorious gambler Lando Calrissian.",
+        "poster_path": "/3IGbjc5ZC5yxim5W0sFING2kdcz.jpg",
+        "release_date": "2018-05-15",
+        "title": "Solo: A Star Wars Story",
+        "video": false,
+        "vote_average": 6.6,
+        "vote_count": 3704,
+        "popularity": 38.237
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/78PjwaykLY2QqhMfWRDvmfbC6EV.jpg",
+        "genre_ids": [18, 35],
+        "id": 490132,
+        "original_language": "en",
+        "original_title": "Green Book",
+        "overview": "Tony Lip, a bouncer in 1962, is hired to drive pianist Don Shirley on a tour through the Deep South in the days when African Americans, forced to find alternate accommodations and services due to segregation laws below the Mason-Dixon Line, relied on a guide called The Negro Motorist Green Book.",
+        "poster_path": "/7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg",
+        "release_date": "2018-11-16",
+        "title": "Green Book",
+        "video": false,
+        "vote_average": 8.3,
+        "vote_count": 3153,
+        "popularity": 46.629
+      }
+    ],
+    "total_pages": 2,
+    "total_results": 40
   }
 }

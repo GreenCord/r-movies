@@ -31,21 +31,6 @@ main {
   width: 100%;
 }
 
-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0;
-  background: $color-medium-light;
-  color: $color-dark;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: $bold;
-  outline: 0;
-  padding: $margin-default/3 $margin-default/2;
-  text-transform: uppercase;
-}
-
 footer {
   background: $color-medium-dark;
   color: $color-medium-light;

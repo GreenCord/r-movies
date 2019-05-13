@@ -18,10 +18,12 @@ const MovieSecondaryContainer = props => {
             alt={movie.title + ` movie poster`}
           />
           <MovieContainer
-            position={i + 2}
             movie={movie}
             displayDescription={props.displayDescription}
             displayCta={props.displayCta}
+            onClick={props.onClick}
+            remove={props.remove}
+            buttonText={props.buttonText}
           />
         </div>
       ))}

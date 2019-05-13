@@ -1,5 +1,6 @@
 import React from "react";
 
+import Button from "../Utilities/Button";
 import FormatDate from "../FormatDate/FormatDate";
 
 import "./MovieContainer.scss";
@@ -30,8 +31,21 @@ const MovieContainer = props => {
         )}
       </div>
       {props.displayCta ? (
-        <button className="btn btn-solid">Details</button>
+        <Button
+          onClick={props.onClick}
+          movie={props.movie}
+          remove={props.remove}
+          buttonText={props.buttonText}
+        />
       ) : (
+        // <button
+        //   onClick={() => {
+        //     props.onClick(props.movie);
+        //   }}
+        //   className="btn btn-solid"
+        // >
+        //   Details
+        // </button>
         <></>
       )}
     </div>

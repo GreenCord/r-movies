@@ -16,13 +16,16 @@ import MovieSecondaryContainer from "./components/MovieContainer/MovieSecondaryC
 
 // Temporary Data for Development
 // import tempSelectedMovie from "./tempdata/tempSelectedMovie.json";
-const tempSelectedMovie = {};
+import tempTop5 from "./tempdata/temp5.json";
+// const tempSelectedMovie = {};
 
 const useAppState = () => {
-  const [top5, setTop5] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  // const [selectedMovie, setSelectedMovie] = useState({});
-  const [selectedMovie, setSelectedMovie] = useState(tempSelectedMovie);
+  // const [top5, setTop5] = useState([]);
+  const [top5, setTop5] = useState(tempTop5);
+  // const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
+  const [selectedMovie, setSelectedMovie] = useState({});
+  // const [selectedMovie, setSelectedMovie] = useState(tempSelectedMovie);
   const [url] = useState("/api/movies/top5");
   const [imgUrl] = useState("https://image.tmdb.org/t/p");
   const [size] = useState({
@@ -33,8 +36,9 @@ const useAppState = () => {
   useEffect(() => {
     const getMovies = async () => {
       setIsLoading(true);
-      const response = await axios(url);
-      setTop5(response.data);
+      // const response = await axios(url);
+      // setTop5(response.data);
+      setTop5(tempTop5);
       setIsLoading(false);
     };
     getMovies();
@@ -74,11 +78,13 @@ const App = props => {
   // };
 
   const onSelectItem = (item, remove) => {
+    console.log("onSelectItem:", item);
     selectIt(item, remove);
     window.scrollTo(0, 0);
   };
   // const background =
   //   "http://image.tmdb.org/t/p/original/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg";
+  console.log("what is top5", top5);
   return (
     <div className="App">
       <div className="flex-wrapper">
@@ -90,7 +96,7 @@ const App = props => {
               imgUrl={imgUrl}
               size={size}
               displayDescription={false}
-              displayCta={false}
+              displayCta={true}
               onClick={onSelectItem}
             />
           ) : isLoading ? (
@@ -102,6 +108,9 @@ const App = props => {
                 imgUrl={imgUrl + size.original}
                 displayDescription={true}
                 displayCta={true}
+                onClick={onSelectItem}
+                remove={false}
+                buttonText={"Details"}
               />
               <MovieSecondaryContainer
                 movies={top5}
@@ -110,6 +119,8 @@ const App = props => {
                 displayDescription={true}
                 displayCta={true}
                 onClick={onSelectItem}
+                remove={false}
+                buttonText={"Details"}
               />
             </>
           )}

@@ -46,7 +46,7 @@ async function getPopular(pageNum) {
 }
 // getDetail retrieves the details for the specific movie ID
 async function getDetail(id) {
-  const reqUrl = `${url}/${id}?api_key=${apiKey}&language=${language}&append_to_response=videos,reviews,recommended`;
+  const reqUrl = `${url}/${id}?api_key=${apiKey}&language=${language}&append_to_response=videos,reviews,recommendations`;
   // Axios request
   let data = await axios.get(reqUrl);
   return data.data;
