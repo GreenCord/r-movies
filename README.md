@@ -1,68 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Movie UI React App
 
-## Available Scripts
+## Project Background
 
-In the project directory, you can run:
+To continue strengthening my skills, I wanted to create a functional application that was similar to interfaces seen on various streaming sites, with content provided by The Movie Database (TMDB) API.
 
-### `npm start`
+As this project is ongoing, I will be layering on new features and content over time. Currently, the application displays the top 5 most popular recent movies, and basic details with TMDB reviews.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##Features
+###Initial Mockup - 5/11/2019
+Mocked up layout of the movies front page.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+###v1.0 - 5/12/2019
+Rendered React components to drive the following features:
 
-### `npm test`
+- Main page lists top 5 movies.
+- #1 Movie is featured in the hero banner.
+- #2-4 Movies featured in a grid below.
+- Movie detail display with backdrop image, poster, overview, and reviews list.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##Tech Stack
+###Back End
+The back end is served using Node/Express with a basic internal API that can be used to make the necessary to TMDB API, and tweak the data returned for use within the Movie UI React App.
 
-### `npm run build`
+###Front End
+The UI is developed using React 16 with Sass preprocessing built in. No other CSS frameworks are used—the UI is being coded entirely from scratch with the React components in mind.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Link
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+https://r-moviesui.herokuapp.com
