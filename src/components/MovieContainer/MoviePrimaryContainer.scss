@@ -37,6 +37,10 @@
       0 2px 4px $color-dark-67,
       0 4px 6px $color-dark-33;
   }
+
+  button {
+    width: fit-content;
+  }
 }
 
 @media only screen and (min-width: 768*$px) {
