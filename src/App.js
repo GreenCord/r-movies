@@ -9,7 +9,7 @@ import logo from "./logo.svg";
 import Loading from "./components/Utilities/Loading";
 import HeaderArea from "./components/Header/HeaderArea";
 import MoviePrimaryContainer from "./components/MovieContainer/MoviePrimaryContainer";
-import MovieContainer from "./components/MovieContainer/MovieContainer";
+import MovieSecondaryContainer from "./components/MovieContainer/MovieSecondaryContainer";
 
 const useAppState = () => {
   const [top5, setTop5] = useState([]);
@@ -60,7 +60,12 @@ const App = props => {
                 movies={top5}
                 imgUrl={imgUrl + size.original}
               />
-              <section className="movie-secondary-wrapper">
+              <MovieSecondaryContainer
+                movies={top5}
+                imgUrl={imgUrl}
+                size={size}
+              />
+              {/* <section className="movie-secondary-wrapper">
                 {top5.slice(1, 5).map((movie, i) => (
                   <div key={movie.id} className="movie-secondary-container">
                     <img
@@ -70,7 +75,7 @@ const App = props => {
                     <MovieContainer position={i + 2} movie={movie} />
                   </div>
                 ))}
-              </section>
+              </section> */}
             </>
           )}
         </main>
