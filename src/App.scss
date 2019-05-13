@@ -25,24 +25,6 @@ html,
   }
 }
 
-
-header {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 10;
-
-  background: $color-dark;
-  color: $color-light;
-  line-height: 1;
-  padding: $margin-default/3;
-
-  div {
-    display: block;
-    float: right;
-  }
-}
-
 main {
   background: $color-medium-light;
   color: $color-dark;

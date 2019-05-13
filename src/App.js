@@ -7,6 +7,7 @@ import logo from "./logo.svg";
 
 // Components
 import Loading from "./components/Utilities/Loading";
+import HeaderArea from "./components/Header/HeaderArea";
 import MoviePrimaryContainer from "./components/MovieContainer/MoviePrimaryContainer";
 import MovieContainer from "./components/MovieContainer/MovieContainer";
 
@@ -49,10 +50,7 @@ const App = props => {
   return (
     <div className="App">
       <div className="flex-wrapper">
-        <header>
-          <img src={logo} alt="nevizen" />
-          <div>Top 5 Most Popular Movies</div>
-        </header>
+        <HeaderArea />
         <main>
           {isLoading ? (
             <Loading />
