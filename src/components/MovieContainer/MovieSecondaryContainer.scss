@@ -11,6 +11,9 @@
   z-index: 9;
 
   .movie-secondary-container {
+    display: flex;
+    flex-direction: column;
+
     background: #fff;
     border-radius: 4px;
     box-shadow:
@@ -43,6 +46,8 @@
 
     img {
       border-radius: 4px 4px 0 0;
+      box-shadow: 0 0 2px 1px $color-dark-19;
+      margin-bottom: $margin-default/3;
       width: 100%;
       height: auto;
     }

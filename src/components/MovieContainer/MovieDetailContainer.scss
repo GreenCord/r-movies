@@ -1,0 +1,26 @@
+@import '../../scss/variables';
+
+.movie-detail-wrapper {
+  width: 100%;
+
+  .movie-detail-container {
+    margin: 0 auto;
+    max-width: 960*$px;
+    padding: $margin-default;
+    width: 100%;
+
+    img {
+      max-width: $margin-default*10;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768*$px) {
+  .movie-detail-wrapper {
+    img {
+      float: right;
+      margin-left: $margin-default;
+    }
+  }
+}

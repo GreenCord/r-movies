@@ -10,19 +10,30 @@ import "./App.scss";
 // Components
 import Loading from "./components/Utilities/Loading";
 import HeaderArea from "./components/Header/HeaderArea";
+import MovieDetailContainer from "./components/MovieContainer/MovieDetailContainer";
 import MoviePrimaryContainer from "./components/MovieContainer/MoviePrimaryContainer";
 import MovieSecondaryContainer from "./components/MovieContainer/MovieSecondaryContainer";
+
+// Temporary Data for Development
+// import tempSelectedMovie from "./tempdata/tempSelectedMovie.json";
+const tempSelectedMovie = {};
 
 const useAppState = () => {
   const [top5, setTop5] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  // const [selectedMovie, setSelectedMovie] = useState({});
+  const [selectedMovie, setSelectedMovie] = useState(tempSelectedMovie);
   const [url] = useState("/api/movies/top5");
+  const [imgUrl] = useState("https://image.tmdb.org/t/p");
+  const [size] = useState({
+    original: "/original",
+    w500: "/w500"
+  });
 
   useEffect(() => {
     const getMovies = async () => {
       setIsLoading(true);
       const response = await axios(url);
-      console.log("useEffect - getMovies - response", response);
       setTop5(response.data);
       setIsLoading(false);
     };
@@ -33,20 +44,39 @@ const useAppState = () => {
   //   setTop5(getTop5);
   // };
 
+  const selectIt = (obj, remove) => {
+    remove ? setSelectedMovie({}) : setSelectedMovie(obj);
+  };
+
   return {
     top5,
-    isLoading
+    isLoading,
+    selectedMovie,
+    imgUrl,
+    size,
+    selectIt
   };
 };
 
 const App = props => {
-  const { top5, isLoading } = useAppState();
-  const imgUrl = "https://image.tmdb.org/t/p";
-  const size = {
-    original: "/original",
-    w500: "/w500"
-  };
+  const {
+    top5,
+    isLoading,
+    selectedMovie,
+    imgUrl,
+    size,
+    selectIt
+  } = useAppState();
+  // const imgUrl = "https://image.tmdb.org/t/p";
+  // const size = {
+  //   original: "/original",
+  //   w500: "/w500"
+  // };
 
+  const onSelectItem = item => {
+    selectIt(item);
+    window.scrollTo(0, 0);
+  };
   // const background =
   //   "http://image.tmdb.org/t/p/original/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg";
   return (
@@ -54,30 +84,32 @@ const App = props => {
       <div className="flex-wrapper">
         <HeaderArea />
         <main>
-          {isLoading ? (
+          {selectedMovie.hasOwnProperty("id") ? (
+            <MovieDetailContainer
+              selectedMovie={selectedMovie}
+              imgUrl={imgUrl}
+              size={size}
+              displayDescription={false}
+              displayCta={false}
+            />
+          ) : isLoading ? (
             <Loading />
           ) : (
             <>
               <MoviePrimaryContainer
                 movies={top5}
                 imgUrl={imgUrl + size.original}
+                displayDescription={true}
+                displayCta={true}
               />
               <MovieSecondaryContainer
                 movies={top5}
                 imgUrl={imgUrl}
                 size={size}
+                displayDescription={true}
+                displayCta={true}
+                onClick={onSelectItem}
               />
-              {/* <section className="movie-secondary-wrapper">
-                {top5.slice(1, 5).map((movie, i) => (
-                  <div key={movie.id} className="movie-secondary-container">
-                    <img
-                      src={`${imgUrl}${size.w500}` + movie.poster_path}
-                      alt={movie.title + ` movie poster`}
-                    />
-                    <MovieContainer position={i + 2} movie={movie} />
-                  </div>
-                ))}
-              </section> */}
             </>
           )}
         </main>

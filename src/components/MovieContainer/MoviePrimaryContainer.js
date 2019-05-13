@@ -5,7 +5,6 @@ import MovieContainer from "./MovieContainer";
 import "./MoviePrimaryContainer.scss";
 
 const MoviePrimaryContainer = props => {
-  console.log("MoviePrimaryContainer - props", props);
   const backdrop_path =
     props.movies.length === 0
       ? "https://placehold.it/1920x1280"
@@ -19,7 +18,11 @@ const MoviePrimaryContainer = props => {
       }}
     >
       <div className="movie-primary-container">
-        <MovieContainer position="1" movie={props.movies[0]} />
+        <MovieContainer
+          movie={props.movies[0]}
+          displayDescription={props.displayDescription}
+          displayCta={props.displayCta}
+        />
       </div>
     </section>
   );

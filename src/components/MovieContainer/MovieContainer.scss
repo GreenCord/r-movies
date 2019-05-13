@@ -1,6 +1,10 @@
 @import '../../scss/variables';
 
 .movie-info-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   position: relative;
   top: 0;
   left: 0;
@@ -46,5 +50,4 @@
   font-size: 14*$px;
   font-weight: $regular;
   display: none;
-  margin-bottom: 0;
 }
