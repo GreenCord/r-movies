@@ -1,3 +1,6 @@
+import "core-js";
+import "raf/polyfill";
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
