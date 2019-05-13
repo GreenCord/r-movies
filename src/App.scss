@@ -16,6 +16,11 @@ html,
 
   .flex-wrapper {
     flex: 1 0 auto;
+
+    position: relative;
+    top: 0;
+    left: 0;
+
     width: 100%;
   }
 }
@@ -33,7 +38,7 @@ header {
   padding: $margin-default/3;
 
   div {
-    display: inline;
+    display: block;
     float: right;
   }
 }

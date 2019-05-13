@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+// Assets
 import "./App.scss";
 import logo from "./logo.svg";
+
 // Components
+import Loading from "./components/Utilities/Loading";
 import MoviePrimaryContainer from "./components/MovieContainer/MoviePrimaryContainer";
 import MovieContainer from "./components/MovieContainer/MovieContainer";
+
 const useAppState = () => {
   const [top5, setTop5] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -49,27 +53,29 @@ const App = props => {
           <img src={logo} alt="nevizen" />
           <div>Top 5 Most Popular Movies</div>
         </header>
-        {isLoading ? (
-          <div>Loading...</div>
-        ) : (
-          <main>
-            <MoviePrimaryContainer
-              movies={top5}
-              imgUrl={imgUrl + size.original}
-            />
-            <section className="movie-secondary-wrapper">
-              {top5.slice(1, 5).map((movie, i) => (
-                <div key={movie.id} className="movie-secondary-container">
-                  <img
-                    src={`${imgUrl}${size.w500}` + movie.poster_path}
-                    alt={movie.title + ` movie poster`}
-                  />
-                  <MovieContainer position={i + 2} movie={movie} />
-                </div>
-              ))}
-            </section>
-          </main>
-        )}
+        <main>
+          {isLoading ? (
+            <Loading />
+          ) : (
+            <>
+              <MoviePrimaryContainer
+                movies={top5}
+                imgUrl={imgUrl + size.original}
+              />
+              <section className="movie-secondary-wrapper">
+                {top5.slice(1, 5).map((movie, i) => (
+                  <div key={movie.id} className="movie-secondary-container">
+                    <img
+                      src={`${imgUrl}${size.w500}` + movie.poster_path}
+                      alt={movie.title + ` movie poster`}
+                    />
+                    <MovieContainer position={i + 2} movie={movie} />
+                  </div>
+                ))}
+              </section>
+            </>
+          )}
+        </main>
       </div>
       <footer>
         &copy; 2019 &ndash; Steven Martinez

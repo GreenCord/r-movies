@@ -1,0 +1,76 @@
+@import '../../../scss/variables';
+
+.loading-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  height: auto;
+  width: 70*$px;
+  margin: auto;
+  margin-left: -35*$px;
+  margin-top: -35*$px;
+
+
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+
+  .loading-circle-stroke {
+    stroke-dasharray: 100, 150;
+    stroke-dashoffset: -50;
+    -webkit-animation: dashgap 1.5s ease-in-out infinite;
+    animation: dashgap 1.5s ease-in-out infinite;
+    stroke-linecap: round;
+  }
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes dashgap {
+  0% {
+    stroke-dasharray: 1, 250;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 125, 250;
+    stroke-dashoffset: -50;
+  }
+
+  100% {
+    stroke-dasharray: 125, 250;
+    stroke-dashoffset: -120;
+  }
+}
+
+@keyframes dashgap {
+  0% {
+    stroke-dasharray: 1, 250;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 125, 250;
+    stroke-dashoffset: -50;
+  }
+
+  100% {
+    stroke-dasharray: 125, 250;
+    stroke-dashoffset: -120;
+  }
+}
