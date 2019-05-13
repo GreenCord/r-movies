@@ -17,7 +17,11 @@ const MovieContainer = props => {
       </div>
       <h1 className="movie-info-title">{props.movie.title}</h1>
       <p className="movie-info-tagline">{props.movie.tagline}</p>
-      <p className="movie-info-description">{props.movie.overview}</p>
+      <p className="movie-info-description">
+        {props.movie.overview.length > 250
+          ? props.movie.overview.slice(0, 250) + "..."
+          : props.movie.overview}
+      </p>
       {/* <button className="btn btn-solid">Details</button> */}
     </div>
   );
