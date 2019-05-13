@@ -3,7 +3,6 @@ import axios from "axios";
 
 // Assets
 import "./App.scss";
-import logo from "./logo.svg";
 
 // Components
 import Loading from "./components/Utilities/Loading";
