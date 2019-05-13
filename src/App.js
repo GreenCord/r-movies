@@ -16,14 +16,14 @@ import MovieSecondaryContainer from "./components/MovieContainer/MovieSecondaryC
 
 // Temporary Data for Development
 // import tempSelectedMovie from "./tempdata/tempSelectedMovie.json";
-import tempTop5 from "./tempdata/temp5.json";
+// import tempTop5 from "./tempdata/temp5.json";
 // const tempSelectedMovie = {};
 
 const useAppState = () => {
-  // const [top5, setTop5] = useState([]);
-  const [top5, setTop5] = useState(tempTop5);
-  // const [isLoading, setIsLoading] = useState(true);
-  const [isLoading, setIsLoading] = useState(false);
+  const [top5, setTop5] = useState([]);
+  // const [top5, setTop5] = useState(tempTop5);
+  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(false);
   const [selectedMovie, setSelectedMovie] = useState({});
   // const [selectedMovie, setSelectedMovie] = useState(tempSelectedMovie);
   const [url] = useState("/api/movies/top5");
@@ -36,17 +36,13 @@ const useAppState = () => {
   useEffect(() => {
     const getMovies = async () => {
       setIsLoading(true);
-      // const response = await axios(url);
-      // setTop5(response.data);
-      setTop5(tempTop5);
+      const response = await axios(url);
+      setTop5(response.data);
+      // setTop5(tempTop5);
       setIsLoading(false);
     };
     getMovies();
   }, [url]);
-
-  // const setAppState = () => {
-  //   setTop5(getTop5);
-  // };
 
   const selectIt = (obj, remove) => {
     remove ? setSelectedMovie({}) : setSelectedMovie(obj);
@@ -71,20 +67,12 @@ const App = props => {
     size,
     selectIt
   } = useAppState();
-  // const imgUrl = "https://image.tmdb.org/t/p";
-  // const size = {
-  //   original: "/original",
-  //   w500: "/w500"
-  // };
 
   const onSelectItem = (item, remove) => {
-    console.log("onSelectItem:", item);
     selectIt(item, remove);
     window.scrollTo(0, 0);
   };
-  // const background =
-  //   "http://image.tmdb.org/t/p/original/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg";
-  console.log("what is top5", top5);
+
   return (
     <div className="App">
       <div className="flex-wrapper">
