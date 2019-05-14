@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const favicon = require("express-favicon");
 const path = require("path");
 
-const routes = require("./src/routes");
+const routes = require("./server/routes");
 
 const port = process.env.PORT || 5624;
 const app = express();
