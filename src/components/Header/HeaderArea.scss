@@ -6,7 +6,7 @@
   left: 0;
   z-index: 10;
 
-  background: $color-dark;
+  background: $color-primary-medium;
   color: $color-light;
   line-height: 1;
   padding: $margin-default/3;
@@ -15,9 +15,29 @@
     margin: 0 auto;
     max-width: 1366*$px;
 
+    img {
+      display: inline-block;
+      vertical-align: baseline;
+    }
+
     nav {
       display: block;
       float: right;
+    }
+  }
+}
+
+@media only screen and (min-width: 768*$px) {
+  .header-wrapper {
+    padding: $margin-default/2;
+
+    .header-container {
+      img {
+        max-width: 90px;
+        height: auto;
+        vertical-align: middle;
+        width: 100%;
+      }
     }
   }
 }
