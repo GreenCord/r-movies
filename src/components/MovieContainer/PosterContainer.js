@@ -1,14 +1,17 @@
 import React from "react";
 
+import Poster from "./Poster";
+
 import "./PosterContainer.scss";
 
 const PosterContainer = props => {
   return (
     <section className="poster-wrapper">
       <div className="poster-container">
-        <img
-          src={props.imgUrl + props.posterPath}
-          alt={"Poster for " + props.title}
+        <Poster
+          imgUrl={props.imgUrl}
+          posterPath={props.posterPath}
+          title={props.title}
         />
         {props.overview.length > 0 && (
           <div className="poster-overview">

@@ -3,6 +3,7 @@ import React from "react";
 import "./MovieSecondaryContainer.scss";
 
 import MovieContainer from "./MovieContainer";
+import Poster from "./Poster";
 
 const MovieSecondaryContainer = props => {
   return (
@@ -13,10 +14,18 @@ const MovieSecondaryContainer = props => {
           onClick={() => props.onClick(movie, false)}
           className="movie-secondary-container"
         >
-          <img
-            src={`${props.imgUrl}${props.size.w500}` + movie.backdrop_path}
-            alt={movie.title + ` movie poster`}
-          />
+          {props.displayPoster ? (
+            <Poster
+              imgUrl={props.imgUrl + props.size.w500}
+              posterPath={movie.poster_path}
+              title={movie.title}
+            />
+          ) : (
+            <img
+              src={`${props.imgUrl}${props.size.w500}` + movie.backdrop_path}
+              alt={movie.title + ` movie poster`}
+            />
+          )}
           <MovieContainer
             movie={movie}
             displayDescription={props.displayDescription}

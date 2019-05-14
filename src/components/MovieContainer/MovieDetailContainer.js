@@ -3,11 +3,15 @@ import React from "react";
 import "./MovieDetailContainer.scss";
 
 import MoviePrimaryContainer from "./MoviePrimaryContainer";
+import MovieSecondaryContainer from "./MovieSecondaryContainer";
 import PosterContainer from "./PosterContainer";
 import Button from "../Utilities/Button";
 
 const MovieDetailContainer = props => {
   const selectedMovie = [props.selectedMovie, props.selectedMovie];
+  const recommendedMovies = [{ firstMovie: null }].concat(
+    props.selectedMovie.recommendations.results.slice(0, 4)
+  );
 
   return (
     <>
@@ -29,8 +33,8 @@ const MovieDetailContainer = props => {
       />
       <section className="movie-detail-wrapper">
         <div className="movie-detail-container">
-          <section class="movie-detail-reviews">
-            <h2 class="section-header">Reviews</h2>
+          <section className="movie-detail-reviews">
+            <h2 className="section-header">Reviews</h2>
             {props.selectedMovie.reviews.results.map((review, i) => (
               <div className="section-item" key={review.author + i}>
                 <p className="section-byLine">{review.author}</p>
@@ -53,7 +57,7 @@ const MovieDetailContainer = props => {
             ))}
           </section>
         </div>
-        <section class="return">
+        <section className="return">
           <Button
             onClick={props.onClick}
             movie={selectedMovie[0]}
@@ -61,6 +65,26 @@ const MovieDetailContainer = props => {
             buttonText={"Back to Movie List"}
           />
         </section>
+      </section>
+      <section className="recommended-wrapper">
+        <div className="recommended-container">
+          <header>
+            <h3>You May Also Like</h3>
+          </header>
+          <MovieSecondaryContainer
+            movies={recommendedMovies}
+            imgUrl={props.imgUrl}
+            size={props.size}
+            displayDescription={true}
+            displayCta={false}
+            displayPoster={true}
+            onClick={() => {
+              console.log("TODO: Get details for clicked item.");
+            }}
+            remove={false}
+            buttonText={"Details"}
+          />
+        </div>
       </section>
     </>
   );
