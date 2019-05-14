@@ -55,7 +55,7 @@ const useAppState = () => {
 
   const selectIt = (obj, remove) => {
     // If incoming obj doesn't have recommendations, we need to get full details
-    if (!obj.recommendations) {
+    if (!obj.recommendations && obj.id) {
       // First find if id exists in top5 and return the detail if we already have it.
       let filtered = top5.filter(movie => {
         return movie.id === obj.id;
