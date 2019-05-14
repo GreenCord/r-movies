@@ -5,6 +5,7 @@ import "./MovieDetailContainer.scss";
 import MoviePrimaryContainer from "./MoviePrimaryContainer";
 import MovieSecondaryContainer from "./MovieSecondaryContainer";
 import PosterContainer from "./PosterContainer";
+import VideosContainer from "./VideosContainer";
 import Button from "../Utilities/Button";
 
 const MovieDetailContainer = props => {
@@ -18,10 +19,9 @@ const MovieDetailContainer = props => {
       <MoviePrimaryContainer
         movies={selectedMovie}
         imgUrl={props.imgUrl + props.size.original}
-        displayDescription={false}
-        displayCta={true}
+        displayDescription={props.displayDescription}
+        displayCta={props.displayCta}
         onClick={props.onClick}
-        movie={selectedMovie[0]}
         remove={true}
         buttonText={"Back to Movie List"}
       />
@@ -30,6 +30,10 @@ const MovieDetailContainer = props => {
         posterPath={props.selectedMovie.poster_path}
         title={props.selectedMovie.title}
         overview={props.selectedMovie.overview}
+      />
+      <VideosContainer
+        videos={props.selectedMovie.videos.results}
+        headerText={"Trailers"}
       />
       <section className="movie-detail-wrapper">
         <div className="movie-detail-container">

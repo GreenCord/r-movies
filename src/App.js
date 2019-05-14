@@ -15,19 +15,19 @@ import MoviePrimaryContainer from "./components/MovieContainer/MoviePrimaryConta
 import MovieSecondaryContainer from "./components/MovieContainer/MovieSecondaryContainer";
 
 // Temporary Data for Development
-// import tempSelectedMovie from "./tempdata/tempSelectedMovie.json";
-// import tempTop5 from "./tempdata/temp5.json";
+import tempSelectedMovie from "./tempdata/tempSelectedMovie.json";
+import tempTop5 from "./tempdata/temp5.json";
 
 const useAppState = () => {
   // Set these for dev, no API calls
-  // const [top5, setTop5] = useState(tempTop5);
-  // const [isLoading, setIsLoading] = useState(false);
-  // const [selectedMovie, setSelectedMovie] = useState(tempSelectedMovie);
+  const [top5, setTop5] = useState(tempTop5);
+  const [isLoading, setIsLoading] = useState(false);
+  const [selectedMovie, setSelectedMovie] = useState(tempSelectedMovie);
 
   // Set these for builds
-  const [top5, setTop5] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [selectedMovie, setSelectedMovie] = useState({});
+  // const [top5, setTop5] = useState([]);
+  // const [isLoading, setIsLoading] = useState(true);
+  // const [selectedMovie, setSelectedMovie] = useState({});
 
   // Static definitions, may use state in the future
   const [url] = useState("/api/movies/top5");
@@ -43,10 +43,10 @@ const useAppState = () => {
       setIsLoading(true);
 
       // Set for dev - no API calls
-      // setTop5(tempTop5);
+      setTop5(tempTop5);
       // Set for builds
-      const response = await axios(url);
-      setTop5(response.data);
+      // const response = await axios(url);
+      // setTop5(response.data);
 
       setIsLoading(false);
     };
@@ -81,8 +81,7 @@ const useAppState = () => {
     selectedMovie,
     imgUrl,
     size,
-    selectIt,
-    findIt
+    selectIt
   };
 };
 
@@ -93,20 +92,12 @@ const App = props => {
     selectedMovie,
     imgUrl,
     size,
-    selectIt,
-    findIt
+    selectIt
   } = useAppState();
 
   const onSelectItem = (id, remove) => {
     selectIt(id, remove);
     window.scrollTo(0, 0);
-  };
-  const onFindItem = item => {
-    if (item.id) {
-      findIt(item);
-    } else {
-      return;
-    }
   };
 
   return (
@@ -120,9 +111,8 @@ const App = props => {
               imgUrl={imgUrl}
               size={size}
               displayDescription={false}
-              displayCta={true}
+              displayCta={false}
               onClick={onSelectItem}
-              onFindItem={onFindItem}
             />
           ) : isLoading ? (
             <Loading />
@@ -133,6 +123,7 @@ const App = props => {
                 imgUrl={imgUrl + size.original}
                 displayDescription={true}
                 displayCta={true}
+                displayVideo={false}
                 onClick={onSelectItem}
                 remove={false}
                 buttonText={"Details"}
