@@ -84,7 +84,7 @@ const App = props => {
   return (
     <div className="App">
       <div className="flex-wrapper">
-        <HeaderArea />
+        <HeaderArea onClick={onSelectItem} />
         <main>
           {selectedMovie.hasOwnProperty("id") ? (
             <MovieDetailContainer
