@@ -1,6 +1,6 @@
 @import '../../scss/variables';
 
-.headerArea {
+.header-wrapper {
   position: relative;
   top: 0;
   left: 0;
@@ -11,8 +11,13 @@
   line-height: 1;
   padding: $margin-default/3;
 
-  div {
-    display: block;
-    float: right;
+  .header-container {
+    margin: 0 auto;
+    max-width: 1366*$px;
+
+    nav {
+      display: block;
+      float: right;
+    }
   }
 }
