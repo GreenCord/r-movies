@@ -5,7 +5,8 @@ button {
   -moz-appearance: none;
   appearance: none;
   border: 0;
-  background: $color-medium-light;
+  border-radius: 25*$px;
+  background: $color-accent-medium;
   color: $color-dark;
   cursor: pointer;
   font-family: inherit;
