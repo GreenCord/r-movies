@@ -111,7 +111,7 @@ const App = props => {
               imgUrl={imgUrl}
               size={size}
               displayDescription={false}
-              displayCta={false}
+              displayCta={true}
               onClick={onSelectItem}
             />
           ) : isLoading ? (
