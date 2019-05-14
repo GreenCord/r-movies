@@ -80,7 +80,7 @@ const MovieDetailContainer = props => {
             imgUrl={props.imgUrl}
             size={props.size}
             displayDescription={true}
-            displayCta={false}
+            displayCta={true}
             displayPoster={true}
             onClick={props.onClick}
             remove={false}
