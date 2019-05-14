@@ -32,9 +32,17 @@ $black: 900;
 // Color Theme
 
 // Colors - primary
-$color-primary-dark: hsl(248, 100%, 18%);
-$color-primary-dark-0: hsla(248, 100%, 18%, 0);
-$color-primary-dark-100: hsla(248, 100%, 18%, 1);
+$color-primary-light: hsl(252, 50%, 95%);
+$color-primary-light-0: hsla(252, 50%, 95%, 0);
+$color-primary-light-100: hsla(252, 50%, 95%, 1);
+
+$color-primary-medium: hsl(248, 100%, 18%);
+$color-primary-medium-0: hsla(248, 100%, 18%, 0);
+$color-primary-medium-100: hsla(248, 100%, 18%, 1);
+
+$color-primary-dark: hsl(244, 75%, 5%);
+$color-primary-dark-0: hsla(244, 75%, 5%, 0);
+$color-primary-dark-100: hsla(244, 75%, 5%, 1);
 
 // Colors - neutral
 $color-light: #efefef;
