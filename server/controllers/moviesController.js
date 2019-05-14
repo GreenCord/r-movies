@@ -10,6 +10,7 @@ const axios = require("axios");
 const url = "https://api.themoviedb.org/3/movie";
 const apiKey = process.env.TMDB_API_KEY;
 const language = "en-US";
+const region = "US";
 
 // Create
 // N/A - Not used for this application yet.
@@ -29,19 +30,26 @@ exports.movies_find = (req, res) => {
 // getPopular retrieves the first page of the most popular movies from TMDB.
 async function getPopular(pageNum) {
   // Build request URL for (pageNum)th page of most popular movies.
-  const reqUrl = `${url}/popular?api_key=${apiKey}&language=${language}&page=${pageNum}`;
+  const reqUrl = `${url}/popular?api_key=${apiKey}&language=${language}&region=${region}&page=${pageNum}`;
 
   // Request response from axios to get the page of popular movies.
   const response = await axios.get(reqUrl);
 
   // Slice the top 5 movies and map the id to the getDetail request.
+  // Get top 5 movies originally released in USA
   // Map responses into movies array.
-  let movies = response.data.results.slice(0, 5).map(movie => {
-    return getDetail(movie.id);
+  let movies = response.data.results.slice(0, 10).map(movie => {
+    if (movie.original_language === "en") {
+      return getDetail(movie.id);
+    }
   });
-  // Returns the movies array with details after all items mapped.
+  // Filter null values and returns the movies array with details after all items mapped.
   return Promise.all(movies).then(completed => {
-    return completed;
+    return completed
+      .filter(x => {
+        return x;
+      })
+      .slice(0, 5);
   });
 }
 // getDetail retrieves the details for the specific movie ID
