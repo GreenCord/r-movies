@@ -20,9 +20,16 @@ const region = "US";
 
 // movies_find: Finds one movie.
 // Serve temporary JSON until API requests created
-exports.movies_find = (req, res) => {
-  const temp = require("../../temporary/temp.json");
-  return res.send(temp);
+exports.movies_find = async (req, res) => {
+  // const temp = require("../../temporary/temp.json");
+  // return res.send(temp);
+  try {
+    const responseData = await getDetail(req.params.id);
+    res.status(200).send(responseData);
+  } catch (event) {
+    console.error("Axios/Error: ", event.stack);
+    res.status(500).send({ error: event.message });
+  }
 };
 
 // movies_top5: Returns datils for the top 5 movies.

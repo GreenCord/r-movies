@@ -31,6 +31,7 @@ const useAppState = () => {
 
   // Static definitions, may use state in the future
   const [url] = useState("/api/movies/top5");
+  const [findUrl] = useState("/api/movies/search");
   const [imgUrl] = useState("https://image.tmdb.org/t/p");
   const [size] = useState({
     original: "/original",
@@ -53,7 +54,25 @@ const useAppState = () => {
   }, [url]);
 
   const selectIt = (obj, remove) => {
-    remove ? setSelectedMovie({}) : setSelectedMovie(obj);
+    // If incoming obj doesn't have recommendations, we need to get full details
+    if (!obj.recommendations) {
+      // First find if id exists in top5 and return the detail if we already have it.
+      let filtered = top5.filter(movie => {
+        return movie.id === obj.id;
+      });
+      filtered.length > 0
+        ? setSelectedMovie(filtered[0])
+        : setSelectedMovie(findIt(obj.id));
+    } else {
+      remove ? setSelectedMovie({}) : setSelectedMovie(obj);
+    }
+  };
+
+  const findIt = async id => {
+    setIsLoading(true);
+    const response = await axios(findUrl + `/${id}`);
+    setSelectedMovie(response.data);
+    setIsLoading(false);
   };
 
   return {
@@ -62,7 +81,8 @@ const useAppState = () => {
     selectedMovie,
     imgUrl,
     size,
-    selectIt
+    selectIt,
+    findIt
   };
 };
 
@@ -73,12 +93,20 @@ const App = props => {
     selectedMovie,
     imgUrl,
     size,
-    selectIt
+    selectIt,
+    findIt
   } = useAppState();
 
-  const onSelectItem = (item, remove) => {
-    selectIt(item, remove);
+  const onSelectItem = (id, remove) => {
+    selectIt(id, remove);
     window.scrollTo(0, 0);
+  };
+  const onFindItem = item => {
+    if (item.id) {
+      findIt(item);
+    } else {
+      return;
+    }
   };
 
   return (
@@ -94,6 +122,7 @@ const App = props => {
               displayDescription={false}
               displayCta={true}
               onClick={onSelectItem}
+              onFindItem={onFindItem}
             />
           ) : isLoading ? (
             <Loading />

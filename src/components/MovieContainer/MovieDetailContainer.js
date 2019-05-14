@@ -78,9 +78,7 @@ const MovieDetailContainer = props => {
             displayDescription={true}
             displayCta={false}
             displayPoster={true}
-            onClick={() => {
-              console.log("TODO: Get details for clicked item.");
-            }}
+            onClick={props.onClick}
             remove={false}
             buttonText={"Details"}
           />
