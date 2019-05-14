@@ -12,7 +12,7 @@ As this project is ongoing, I will be layering on new features and content over 
 
 Mocked up layout of the movies front page.
 
-### v1.0 - 5/12/2019
+### v1.0 - 5/13/2019
 
 Rendered React components to drive the following features:
 
@@ -20,6 +20,13 @@ Rendered React components to drive the following features:
 - #1 Movie is featured in the hero banner.
 - #2-4 Movies featured in a grid below.
 - Movie detail display with backdrop image, poster, overview, and reviews list.
+
+### v1.1 - 5/14/2019
+
+Added in additional React components:
+
+- Handling Poster display for loading initial data vs. loading movie details.
+- Added recommended movies to movie details screen, click to view details of a recommended movie.
 
 ## Tech Stack
 
