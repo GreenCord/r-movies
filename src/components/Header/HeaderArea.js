@@ -14,7 +14,7 @@ const HeaderArea = props => {
           }}
           alt="nevizen"
         />
-        <nav class="temporary">Top 5 Most Popular Movies</nav>
+        <nav className="temporary">Top 5 Most Popular Movies</nav>
       </div>
     </header>
   );
