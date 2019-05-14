@@ -13,11 +13,14 @@ const VideoContainer = props => {
         )}
         {props.videos
           .filter(video => {
-            return video.type.toLowerCase() === "trailer";
+            return (
+              video.type.toLowerCase() === "trailer" ||
+              video.type.toLowerCase() === "teaser"
+            );
           })
           .map(video => {
             return (
-              <div className="videos-item">
+              <div key={video.key} className="videos-item">
                 <div className="videos-thumbnail">
                   <img
                     src={`https://img.youtube.com/vi/${
@@ -26,7 +29,9 @@ const VideoContainer = props => {
                     alt={`YouTube: ${video.name}`}
                   />
                 </div>
-                <p>{video.name}</p>
+                <p>
+                  ({video.type}){video.name}
+                </p>
               </div>
             );
           })}

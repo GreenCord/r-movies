@@ -33,7 +33,7 @@ const MovieDetailContainer = props => {
       />
       <VideosContainer
         videos={props.selectedMovie.videos.results}
-        headerText={"Trailers"}
+        headerText={"Watch the Latest Trailers"}
       />
       <section className="movie-detail-wrapper">
         <div className="movie-detail-container">
@@ -73,7 +73,7 @@ const MovieDetailContainer = props => {
       <section className="recommended-wrapper">
         <div className="recommended-container">
           <header>
-            <h3>You May Also Like</h3>
+            <h2>You May Also Like</h2>
           </header>
           <MovieSecondaryContainer
             movies={recommendedMovies}
