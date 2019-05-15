@@ -4,8 +4,9 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: 0;
+  border: 1px solid $color-accent-medium;
   border-radius: 25*$px;
+  box-shadow: $dropshadow;
   background: $color-accent-medium;
   color: $color-dark;
   cursor: pointer;
@@ -14,4 +15,23 @@ button {
   outline: 0;
   padding: $margin-default/3 $margin-default/2;
   text-transform: uppercase;
+  transform: translateY(0);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: $color-accent-light;
+    color: $color-accent-dark;
+    transform: translateY(1*$px);
+  }
+
+  &.button-light {
+    background: $color-accent-light;
+    border: 1px solid $color-accent-dark;
+    color: $color-accent-dark;
+
+    &:hover {
+      background: $color-accent-medium;
+      color: $color-dark;
+    }
+  }
 }

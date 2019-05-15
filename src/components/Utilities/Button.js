@@ -8,7 +8,7 @@ const Button = props => {
       onClick={() => {
         props.onClick(props.movie, props.remove);
       }}
-      className="btn btn-solid"
+      className={props.className}
     >
       {props.buttonText}
     </button>

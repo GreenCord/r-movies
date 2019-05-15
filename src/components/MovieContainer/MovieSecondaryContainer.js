@@ -33,6 +33,7 @@ const MovieSecondaryContainer = props => {
             onClick={props.onClick}
             remove={props.remove}
             buttonText={props.buttonText}
+            buttonClass={"button-light"}
           />
         </div>
       ))}

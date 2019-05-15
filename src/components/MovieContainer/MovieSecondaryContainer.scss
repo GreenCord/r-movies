@@ -23,7 +23,7 @@
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      box-shadow: $dropshadow;
+      box-shadow: $dropshadow-low;
       transform: translateY(-$margin-default*2 + 2*$px);
     }
 

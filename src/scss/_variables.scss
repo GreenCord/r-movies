@@ -53,16 +53,21 @@ $color-accent-dark: hsl(120, 70%, 15%);
 $color-light: #efefef;
 $color-medium-light: #c4c4c4;
 $color-medium: #707070;
-$color-medium-100: rgba(112, 112, 112, 1);
-$color-medium-50: rgba(112, 112, 112, .5);
+$color-medium-100: hsla(0, 0%, 44%, 1);
+$color-medium-50: hsla(0, 0%, 44%, 0.5);
 $color-medium-dark: #333333;
 $color-dark: #0e0e0e;
-$color-dark-19: rgba(14, 14, 14, 0.19);
-$color-dark-33: rgba(14, 14, 14, 0.33);
-$color-dark-67: rgba(14, 14, 14, 0.67);
+$color-dark-19: hsla(0, 0%, 5%, 0.19);
+$color-dark-33: hsla(0, 0%, 5%, 0.33);
+$color-dark-67: hsla(0, 0%, 5%, 0.67);
 
 // Drop Shadow
-$dropshadow: 0 0 1px $color-dark-67,
-0 1px 2px $color-dark-67,
-0 2px 4px $color-dark-33,
+$dropshadow: 0 0 1px $color-dark-33,
+0 1px 2px $color-dark-33,
+0 2px 4px $color-dark-19,
 0 4px 6px $color-dark-19;
+
+$dropshadow-low: 0 0 1px $color-dark-67,
+0 1px 1px $color-dark-67,
+0 2px 2px $color-dark-33,
+0 4px 4px $color-dark-19;

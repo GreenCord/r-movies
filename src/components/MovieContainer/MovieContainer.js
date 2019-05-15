@@ -36,6 +36,7 @@ const MovieContainer = props => {
           movie={props.movie}
           remove={props.remove}
           buttonText={props.buttonText}
+          className={props.buttonClass}
         />
       )}
     </div>
