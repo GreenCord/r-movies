@@ -5,7 +5,7 @@ import "./MovieDetailContainer.scss";
 import MoviePrimaryContainer from "./MoviePrimaryContainer";
 import MovieSecondaryContainer from "./MovieSecondaryContainer";
 import PosterContainer from "./PosterContainer";
-import VideosContainer from "./VideosContainer";
+// import VideosContainer from "./VideosContainer";
 import Button from "../Utilities/Button";
 
 const MovieDetailContainer = props => {
@@ -31,10 +31,10 @@ const MovieDetailContainer = props => {
         title={props.selectedMovie.title}
         overview={props.selectedMovie.overview}
       />
-      <VideosContainer
+      {/* <VideosContainer
         videos={props.selectedMovie.videos.results}
         headerText={"Watch the Latest Trailers"}
-      />
+      /> */}
       <section className="movie-detail-wrapper">
         <div className="movie-detail-container">
           <section className="movie-detail-reviews">
