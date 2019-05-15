@@ -70,24 +70,26 @@ const MovieDetailContainer = props => {
           />
         </section>
       </section>
-      <section className="recommended-wrapper">
-        <div className="recommended-container">
-          <header>
-            <h2>You May Also Like</h2>
-          </header>
-          <MovieSecondaryContainer
-            movies={recommendedMovies}
-            imgUrl={props.imgUrl}
-            size={props.size}
-            displayDescription={true}
-            displayCta={true}
-            displayPoster={true}
-            onClick={props.onClick}
-            remove={false}
-            buttonText={"Details"}
-          />
-        </div>
-      </section>
+      {props.selectedMovie.recommendations.results.length > 0 && (
+        <section className="recommended-wrapper">
+          <div className="recommended-container">
+            <header>
+              <h2>You May Also Like</h2>
+            </header>
+            <MovieSecondaryContainer
+              movies={recommendedMovies}
+              imgUrl={props.imgUrl}
+              size={props.size}
+              displayDescription={true}
+              displayCta={true}
+              displayPoster={true}
+              onClick={props.onClick}
+              remove={false}
+              buttonText={"Details"}
+            />
+          </div>
+        </section>
+      )}
     </>
   );
 };
