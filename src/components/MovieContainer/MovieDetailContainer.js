@@ -14,6 +14,8 @@ const MovieDetailContainer = props => {
     props.selectedMovie.recommendations.results.slice(0, 4)
   );
 
+  console.log("props", props.selectedMovie.reviews);
+
   return (
     <>
       <MoviePrimaryContainer
@@ -39,26 +41,32 @@ const MovieDetailContainer = props => {
         <div className="movie-detail-container">
           <section className="movie-detail-reviews">
             <h2 className="section-header">Reviews</h2>
-            {props.selectedMovie.reviews.results.map((review, i) => (
-              <div className="section-item" key={review.author + i}>
-                <p className="section-byLine">{review.author}</p>
-                <p>
-                  {review.content.length > 250
-                    ? review.content.slice(0, 250) + "..."
-                    : review.content}
-                </p>
-                <p>
-                  <a
-                    href={review.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title={"Review by " + review.author}
-                  >
-                    Read Full Review
-                  </a>
-                </p>
+            {props.selectedMovie.reviews.results.length > 0 ? (
+              props.selectedMovie.reviews.results.map((review, i) => (
+                <div className="section-item" key={review.author + i}>
+                  <p className="section-byLine">{review.author}</p>
+                  <p>
+                    {review.content.length > 250
+                      ? review.content.slice(0, 250) + "..."
+                      : review.content}
+                  </p>
+                  <p>
+                    <a
+                      href={review.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={"Review by " + review.author}
+                    >
+                      Read Full Review
+                    </a>
+                  </p>
+                </div>
+              ))
+            ) : (
+              <div className="no-content">
+                <p>This movie is so hot there are no reviews available yet.</p>
               </div>
-            ))}
+            )}
           </section>
         </div>
         <section className="return">

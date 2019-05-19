@@ -47,7 +47,8 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: $margin-default;
 
-        .section-header {
+        .section-header,
+        .no-content {
           grid-column: span 2;
         }
 
