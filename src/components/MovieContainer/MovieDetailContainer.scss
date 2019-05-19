@@ -86,27 +86,6 @@
       margin-bottom: $margin-default;
       text-align: center;
     }
-
-    .recommended-item {
-      background: $color-light;
-      border-radius: 8*$px;
-      color: $color-dark;
-      padding: $margin-default/4;
-      width: 100%;
-
-      img {
-        border-radius: 6*$px;
-        display: block;
-        height: auto;
-        margin: 0 auto $margin-default/4;
-        width: 100%;
-      }
-
-      .recommended-item-title {
-        font-size: 14*$px;
-        font-weight: $black;
-      }
-    }
   }
 }
 
