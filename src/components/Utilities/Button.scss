@@ -10,6 +10,7 @@ button {
   background: $color-accent-medium;
   color: $color-dark;
   cursor: pointer;
+  display: inline-block;
   font-family: inherit;
   font-weight: $bold;
   outline: 0;
@@ -17,6 +18,7 @@ button {
   text-transform: uppercase;
   transform: translateY(0);
   transition: all 0.2s ease-in-out;
+  width: auto;
 
   &:hover {
     background: $color-accent-light;
