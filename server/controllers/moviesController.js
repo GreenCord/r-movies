@@ -28,7 +28,13 @@ exports.movies_find = async (req, res) => {
     res.status(200).send(responseData);
   } catch (event) {
     console.error("Axios/Error: ", event.stack);
-    res.status(500).send({ error: event.message });
+    switch (event.response.status) {
+      case 404:
+        res.status(404).send({ error: event.message });
+        break;
+      default:
+        res.status(500).send({ error: event.message });
+    }
   }
 };
 

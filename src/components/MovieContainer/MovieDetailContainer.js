@@ -14,8 +14,6 @@ const MovieDetailContainer = props => {
     props.selectedMovie.recommendations.results.slice(0, 4)
   );
 
-  console.log("props", props.selectedMovie.reviews);
-
   return (
     <>
       <MoviePrimaryContainer
@@ -37,47 +35,51 @@ const MovieDetailContainer = props => {
         videos={props.selectedMovie.videos.results}
         headerText={"Watch the Latest Trailers"}
       /> */}
-      <section className="movie-detail-wrapper">
-        <div className="movie-detail-container">
-          <section className="movie-detail-reviews">
-            <h2 className="section-header">Reviews</h2>
-            {props.selectedMovie.reviews.results.length > 0 ? (
-              props.selectedMovie.reviews.results.map((review, i) => (
-                <div className="section-item" key={review.author + i}>
-                  <p className="section-byLine">{review.author}</p>
+      {props.selectedMovie.genres[0].name !== "Error" && (
+        <section className="movie-detail-wrapper">
+          <div className="movie-detail-container">
+            <section className="movie-detail-reviews">
+              <h2 className="section-header">Reviews</h2>
+              {props.selectedMovie.reviews.results.length > 0 ? (
+                props.selectedMovie.reviews.results.map((review, i) => (
+                  <div className="section-item" key={review.author + i}>
+                    <p className="section-byLine">{review.author}</p>
+                    <p>
+                      {review.content.length > 250
+                        ? review.content.slice(0, 250) + "..."
+                        : review.content}
+                    </p>
+                    <p>
+                      <a
+                        href={review.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={"Review by " + review.author}
+                      >
+                        Read Full Review
+                      </a>
+                    </p>
+                  </div>
+                ))
+              ) : (
+                <div className="no-content">
                   <p>
-                    {review.content.length > 250
-                      ? review.content.slice(0, 250) + "..."
-                      : review.content}
-                  </p>
-                  <p>
-                    <a
-                      href={review.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title={"Review by " + review.author}
-                    >
-                      Read Full Review
-                    </a>
+                    This movie is so hot there are no reviews available yet.
                   </p>
                 </div>
-              ))
-            ) : (
-              <div className="no-content">
-                <p>This movie is so hot there are no reviews available yet.</p>
-              </div>
-            )}
+              )}
+            </section>
+          </div>
+          <section className="return">
+            <Button
+              onClick={props.onClick}
+              movie={selectedMovie[0]}
+              remove={true}
+              buttonText={"Back to Movie List"}
+            />
           </section>
-        </div>
-        <section className="return">
-          <Button
-            onClick={props.onClick}
-            movie={selectedMovie[0]}
-            remove={true}
-            buttonText={"Back to Movie List"}
-          />
         </section>
-      </section>
+      )}
       {props.selectedMovie.recommendations.results.length > 0 && (
         <section className="recommended-wrapper">
           <div className="recommended-container">

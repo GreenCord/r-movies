@@ -70,9 +70,24 @@ const useAppState = () => {
 
   const findIt = async id => {
     setIsLoading(true);
-    const response = await axios(findUrl + `/${id}`);
-    setSelectedMovie(response.data);
-    setIsLoading(false);
+    try {
+      const response = await axios(findUrl + `/${id}`);
+      setSelectedMovie(response.data);
+      setIsLoading(false);
+    } catch (event) {
+      setSelectedMovie({
+        id: null,
+        original_language: "en",
+        genres: [{ id: 404, name: "Error" }],
+        title: "404 Movie Not Found",
+        tagline: "Unfortunately, info for this movie was not found.",
+        overview: "",
+        recommendations: { results: [] },
+        reviews: { results: [] },
+        poster_path: ""
+      });
+      setIsLoading(false);
+    }
   };
 
   return {
