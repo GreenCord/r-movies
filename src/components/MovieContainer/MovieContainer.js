@@ -6,7 +6,6 @@ import FormatDate from "../FormatDate/FormatDate";
 import "./MovieContainer.scss";
 
 const MovieContainer = props => {
-  console.log("MovieContainer - release_date", props.movie.release_date);
   return (
     <div className="movie-info-container">
       <div className="flex-wrapper">

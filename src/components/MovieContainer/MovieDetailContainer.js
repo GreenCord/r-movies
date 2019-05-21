@@ -91,7 +91,7 @@ const MovieDetailContainer = props => {
               imgUrl={props.imgUrl}
               size={props.size}
               displayDescription={true}
-              displayCta={true}
+              displayCta={false}
               displayPoster={true}
               onClick={props.onClick}
               remove={false}

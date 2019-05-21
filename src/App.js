@@ -148,7 +148,7 @@ const App = props => {
                 imgUrl={imgUrl}
                 size={size}
                 displayDescription={true}
-                displayCta={true}
+                displayCta={false}
                 onClick={onSelectItem}
                 remove={false}
                 buttonText={"Details"}
